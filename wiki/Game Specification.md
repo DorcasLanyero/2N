@@ -14,10 +14,18 @@ The game itself is played on a tiled grid, the size of which is determined by th
 
 ## Theme
 
-##By default
+## Gameplay
+
+### Goals
+
+### User Skills
+
+### Game
+
+
 #### Notes:
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDQ0MDg5NiwyMjc1OTc1NDAsMTE3Mz
-c2OTEyMSwtMTc0NDg1NDI2NF19
+eyJoaXN0b3J5IjpbLTE2NzE1NjU5NTAsMjI3NTk3NTQwLDExNz
+M3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
 -->
