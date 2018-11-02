@@ -1,9 +1,9 @@
 # Game Specification
 ## Project Description
-This deisgn document describes2^N^ is a simple skill-based, 
+This design document describes 2^N^, a simple 2D, skill-based tile game based off the game 2048.
 #### Notes:
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzIzMTk1MywyMjc1OTc1NDAsMTE3Mz
-c2OTEyMSwtMTc0NDg1NDI2NF19
+eyJoaXN0b3J5IjpbLTE0MjY1OTcxMzAsMjI3NTk3NTQwLDExNz
+M3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
 -->
