@@ -1,6 +1,9 @@
 # Game Specification
 ## Project Description
 
+#### Notes:
+Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF19
+eyJoaXN0b3J5IjpbLTE0MTM2MzEyMiwxMTczNzY5MTIxLC0xNz
+Q0ODU0MjY0XX0=
 -->
