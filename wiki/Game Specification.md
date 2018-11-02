@@ -19,6 +19,8 @@ The game itself is played on a tiled grid, the size of which is determined by th
 ### Goals
 The goal of this game is for the user to produce a tile with the highest tile size as defined by the difficulty level (see difficulty level table above.)
 ### User Skills
+* Ability to use WASD and arrow keys
+* 
 
 ### Game Mechanics
 
@@ -36,7 +38,8 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 ## Other Ideas (Optional)
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MjQ2NjI1OCwtMTUzMDUwMDYwNiwyMj
+eyJoaXN0b3J5IjpbLTE0OTgyNDk5NywtMTUzMDUwMDYwNiwyMj
 c1OTc1NDAsMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF19
 -->
