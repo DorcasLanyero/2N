@@ -7,13 +7,13 @@ The game itself is played on a tiled grid, the size of which is determined by th
 
 | Highest Tile Size | Grid Size |
 |-------------------|-----------|
-1024 | 4x4
-2048 | 4x4
-4096 | 6x6
-8192 | 6x6
+| 1024              | 4x4       |
+| 2048              | 4x4       |
+| 4096              | 6x6       |
+| 8192              | 6x6       |
 #### Notes:
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNDUwNDQxNywyMjc1OTc1NDAsMTE3Mz
-c2OTEyMSwtMTc0NDg1NDI2NF19
+eyJoaXN0b3J5IjpbLTEyOTQ2MTIwMjMsMjI3NTk3NTQwLDExNz
+M3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
 -->
