@@ -20,12 +20,28 @@ The game itself is played on a tiled grid, the size of which is determined by th
 
 ### User Skills
 
-### Game
+### Game Mechanics
+
+### Items and Powerups
+
+### Progression and Challenge
+
+### Losing
+
+## Art Style
+
+## Music and Sounds
+
+## Technical Description
+
+
+
+
 
 
 #### Notes:
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzE1NjU5NTAsMjI3NTk3NTQwLDExNz
-M3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
+eyJoaXN0b3J5IjpbMTY4NDA0NTc3MiwyMjc1OTc1NDAsMTE3Mz
+c2OTEyMSwtMTc0NDg1NDI2NF19
 -->
