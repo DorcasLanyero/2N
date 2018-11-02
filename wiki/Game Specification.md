@@ -28,7 +28,8 @@ The goal of this game is for the user to produce a tile with the highest tile si
 * Ability to add numbers
 
 ### Game Mechanics
-The game consists 
+The game consists of a grid of tiles, initially empty except for one tile with the value of 2.  Using the WASD or arrow keys, the user shifts
+
 ### Items and Powerups
 
 ### Progression and Challenge
@@ -45,6 +46,6 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDgwNDg3OCwtMTUzMDUwMDYwNiwyMj
-c1OTc1NDAsMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF19
+eyJoaXN0b3J5IjpbLTE4ODczNjIyODIsLTE1MzA1MDA2MDYsMj
+I3NTk3NTQwLDExNzM3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
 -->
