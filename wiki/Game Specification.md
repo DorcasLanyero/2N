@@ -17,7 +17,7 @@ The game itself is played on a tiled grid, the size of which is determined by th
 ## Gameplay
 
 ### Goals
-
+The goal of this game is for the user to produce a tile with 
 ### User Skills
 
 ### Game Mechanics
@@ -37,6 +37,6 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 ## Other Ideas (Optional)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzA1MDA2MDYsMjI3NTk3NTQwLDExNz
-M3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
+eyJoaXN0b3J5IjpbLTE4MjQxMjE1MjYsLTE1MzA1MDA2MDYsMj
+I3NTk3NTQwLDExNzM3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
 -->
