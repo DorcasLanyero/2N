@@ -1,4 +1,7 @@
 # Game Specification
+Author: Matthew Miller
+Date: 11-2-2018
+Version: 1.0 rev1
 ## Project Description
 This design document describes 2^N^, a simple 2D, skill-based tile game based off the game [2048](https://play2048.co/).  This implementation includes several innovations including multiple levels of difficulty (hence the name), networked multi-player speed competitions, and support for multiple platforms.
 
@@ -40,6 +43,6 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTgyNDk5NywtMTUzMDUwMDYwNiwyMj
+eyJoaXN0b3J5IjpbMTg1OTgzOTMxNywtMTUzMDUwMDYwNiwyMj
 c1OTc1NDAsMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF19
 -->
