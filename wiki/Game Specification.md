@@ -29,19 +29,14 @@ The game itself is played on a tiled grid, the size of which is determined by th
 ### Losing
 
 ## Art Style
-
+Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 ## Music and Sounds
 
 ## Technical Description
 
+## Other Ideas (Optional)
 
-
-
-
-
-#### Notes:
-Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NDA0NTc3MiwyMjc1OTc1NDAsMTE3Mz
-c2OTEyMSwtMTc0NDg1NDI2NF19
+eyJoaXN0b3J5IjpbLTE1MzA1MDA2MDYsMjI3NTk3NTQwLDExNz
+M3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
 -->
