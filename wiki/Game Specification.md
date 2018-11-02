@@ -12,10 +12,12 @@ The game itself is played on a tiled grid, the size of which is determined by th
 | 4096              | 6x6       |
 | 8192              | 6x6       |
 
-By default
+## Theme
+
+##By default
 #### Notes:
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3NDY2ODkzLDIyNzU5NzU0MCwxMTczNz
-Y5MTIxLC0xNzQ0ODU0MjY0XX0=
+eyJoaXN0b3J5IjpbMTQzNDQ0MDg5NiwyMjc1OTc1NDAsMTE3Mz
+c2OTEyMSwtMTc0NDg1NDI2NF19
 -->
