@@ -28,14 +28,14 @@ The goal of this game is for the user to produce a tile with the highest tile si
 * Ability to add numbers
 
 ### Game Mechanics
-The game consists of a grid of tiles, initially empty except for one tile with the value of 2.  Using the WASD or arrow keys, the user shifts the blocks around the board.  Each time a key is pressed, all of the tiles that are not touching an edge or an incompatible tile in the direction of the key moves as far as it can in that direction.  If the tile impacts a tile that is compatible, it combines with that tile, producing a new tile with the value of the sum of the two tiles.  **Note:** Two tiles are compatible when they contain the same value. 
+The game consists of a grid of tiles, initially empty except for one tile with the value of 2.  Using the WASD or arrow keys, the user shifts the blocks around the board.  Each time a key is pressed, all of the tiles that are not touching an edge or an incompatible tile in the direction of the key moves as far as it can in that direction.  If the tile impacts a tile that is compatible, it combines with that tile, producing a new tile with the value of the sum of the two tiles.  **Note:** Two tiles are compatible when they contain the same value, or when one of the tiles is a power tile.
 
 Additionally, each time one of the direction keys is pressed, a new tile is spawned in a random location on the board with a value of 2.
 
 ### Items and Powerups
 The board consists of tiles containing a numerical value.  Each tile starts with a value of 2 when spawned, and when tiles are combined the stationary tile's value becomes the sum of its former value and the value of the tile it combined with.
 
-In certain situations, tiles can be summed multiple times in a row.  When 
+In certain situations, tiles can be summed multiple times in a row.  When a tile is combined 3 times in a row, it becomes a power tile.  Power tiles have the ability to combine with tiles 
 
 ### Progression and Challenge
 
@@ -51,7 +51,7 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMzM3MjQzLDQyMDEyMjk4NiwtMTg4Nz
-M2MjI4MiwtMTUzMDUwMDYwNiwyMjc1OTc1NDAsMTE3Mzc2OTEy
-MSwtMTc0NDg1NDI2NF19
+eyJoaXN0b3J5IjpbLTExMDQ0OTI4MzMsNDIwMTIyOTg2LC0xOD
+g3MzYyMjgyLC0xNTMwNTAwNjA2LDIyNzU5NzU0MCwxMTczNzY5
+MTIxLC0xNzQ0ODU0MjY0XX0=
 -->
