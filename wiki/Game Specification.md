@@ -37,13 +37,15 @@ As tiles are added together, the sum of the operation is added to the score of t
 ### Items and Powerups
 The board consists of tiles containing a numerical value.  Each tile starts with a value of 2 when spawned, and when tiles are combined the stationary tile's value becomes the sum of its former value and the value of the tile it combined with.
 
-In certain situations, tiles can be summed multiple times in a row.  When a tile is combined 3 times in a row, it becomes a power tile.  Power tiles have the ability to combine with tiles 
+In certain situations, tiles can be summed multiple times in a row.  When a tile is combined 3 times in a row, it becomes a power tile.  When a tile attains power status, it doubles it's value and immediately reverts to a normal state.
 
 ### Progression and Challenge
 As the game is played, tiles are summed together.  Since tiles can onnly be summed with identical tiles, the possible moves of the player decreases as the game progresses.  Eventually the board becomes crowded with tiles that cannot be summed together and the game ends.
 
 ### Losing
 As the game progresses, eventually the board will fill up with tiles that cannot be summed.  If the board fills up before the player creates a tile with the maximum value for the level, the game ends.  In single-player mode, this means the player has lost.  In multiplayer-mode, the session ends when one of the players either creates a maximum-value tile or fills up their board with tiles that can't be summed.  At that point, the player with the highest score wins and all other players lose the round.
+
+In some cases, a valu
 
 ## Art Style
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
@@ -58,9 +60,9 @@ This game is designed as a pretty lightweight, minimalist game, and therefore we
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY0MjMwMDU2LC03NTM4MzE0NjEsLTE2MT
-gyNDMwMDMsLTY5NDc2NTU5MCwtMTMzMTYxMzI3NiwtMTEzMzA2
-ODEzLDIwMzc2NTQwNzcsLTExMDQ0OTI4MzMsNDIwMTIyOTg2LC
-0xODg3MzYyMjgyLC0xNTMwNTAwNjA2LDIyNzU5NzU0MCwxMTcz
-NzY5MTIxLC0xNzQ0ODU0MjY0XX0=
+eyJoaXN0b3J5IjpbLTE3MjQyMTk5NDYsMjY0MjMwMDU2LC03NT
+M4MzE0NjEsLTE2MTgyNDMwMDMsLTY5NDc2NTU5MCwtMTMzMTYx
+MzI3NiwtMTEzMzA2ODEzLDIwMzc2NTQwNzcsLTExMDQ0OTI4Mz
+MsNDIwMTIyOTg2LC0xODg3MzYyMjgyLC0xNTMwNTAwNjA2LDIy
+NzU5NzU0MCwxMTczNzY5MTIxLC0xNzQ0ODU0MjY0XX0=
 -->
