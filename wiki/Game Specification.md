@@ -32,6 +32,8 @@ The game consists of a grid of tiles, initially empty except for one tile with t
 
 Additionally, each time one of the direction keys is pressed, a new tile is spawned in a random location on the board with a value of 2.
 
+As tiles are added together, the sum of the operation is added to the score of the game.  Thus, in a multiplayer env
+
 ### Items and Powerups
 The board consists of tiles containing a numerical value.  Each tile starts with a value of 2 when spawned, and when tiles are combined the stationary tile's value becomes the sum of its former value and the value of the tile it combined with.
 
@@ -52,8 +54,8 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzMwNjgxMywyMDM3NjU0MDc3LC0xMT
-A0NDkyODMzLDQyMDEyMjk4NiwtMTg4NzM2MjI4MiwtMTUzMDUw
-MDYwNiwyMjc1OTc1NDAsMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF
-19
+eyJoaXN0b3J5IjpbOTg3Mzc5OTg4LC0xMTMzMDY4MTMsMjAzNz
+Y1NDA3NywtMTEwNDQ5MjgzMyw0MjAxMjI5ODYsLTE4ODczNjIy
+ODIsLTE1MzA1MDA2MDYsMjI3NTk3NTQwLDExNzM3NjkxMjEsLT
+E3NDQ4NTQyNjRdfQ==
 -->
