@@ -43,7 +43,7 @@ In certain situations, tiles can be summed multiple times in a row.  When a tile
 As the game is played, tiles are summed together.  Since tiles can onnly be summed with identical tiles, the possible moves of the player decreases as the game progresses.  Eventually the board becomes crowded with tiles that cannot be summed together and the game ends.
 
 ### Losing
-As the game progresses, eventually the board will fill up with tiles that cannot be summed.  If the board fills up before the player creates a tile with the maximum value for the level, the game ends.  In a s
+As the game progresses, eventually the board will fill up with tiles that cannot be summed.  If the board fills up before the player creates a tile with the maximum value for the level, the game ends.  In single-player mode, this means the player has lost.
 
 ## Art Style
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
@@ -55,9 +55,9 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyODY4NTY2MiwtNjk0NzY1NTkwLC0xMz
-MxNjEzMjc2LC0xMTMzMDY4MTMsMjAzNzY1NDA3NywtMTEwNDQ5
-MjgzMyw0MjAxMjI5ODYsLTE4ODczNjIyODIsLTE1MzA1MDA2MD
-YsMjI3NTk3NTQwLDExNzM3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
+eyJoaXN0b3J5IjpbLTE2MTgyNDMwMDMsLTY5NDc2NTU5MCwtMT
+MzMTYxMzI3NiwtMTEzMzA2ODEzLDIwMzc2NTQwNzcsLTExMDQ0
+OTI4MzMsNDIwMTIyOTg2LC0xODg3MzYyMjgyLC0xNTMwNTAwNj
+A2LDIyNzU5NzU0MCwxMTczNzY5MTIxLC0xNzQ0ODU0MjY0XX0=
 
 -->
