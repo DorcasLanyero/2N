@@ -45,10 +45,11 @@ As the game is played, tiles are summed together.  Since tiles can onnly be summ
 ### Losing
 As the game progresses, eventually the board will fill up with tiles that cannot be summed.  If the board fills up before the player creates a tile with the maximum value for the level, the game ends.  In single-player mode, this means the player has lost.  In multiplayer-mode, the session ends when one of the players either creates a maximum-value tile or fills up their board with tiles that can't be summed.  At that point, the player with the highest score wins and all other players lose the round.
 
-It is possible to attain a tile with a higher value than the maximum tile value.  If a power tile 
+It is possible to attain a tile with a higher value than the maximum tile value.  If a tile with a number close enough to the maximum value becomes a power tile, the 
 
 ## Art Style
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
+
 ## Music and Sounds
 This game is designed as a pretty lightweight, minimalist game, and therefore we are not adding any music.
 ### Sound effects
@@ -60,9 +61,9 @@ This game is designed as a pretty lightweight, minimalist game, and therefore we
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTI1MTU1OTUsMjY0MjMwMDU2LC03NT
-M4MzE0NjEsLTE2MTgyNDMwMDMsLTY5NDc2NTU5MCwtMTMzMTYx
-MzI3NiwtMTEzMzA2ODEzLDIwMzc2NTQwNzcsLTExMDQ0OTI4Mz
-MsNDIwMTIyOTg2LC0xODg3MzYyMjgyLC0xNTMwNTAwNjA2LDIy
-NzU5NzU0MCwxMTczNzY5MTIxLC0xNzQ0ODU0MjY0XX0=
+eyJoaXN0b3J5IjpbNzkyNTk0Nzc0LDI2NDIzMDA1NiwtNzUzOD
+MxNDYxLC0xNjE4MjQzMDAzLC02OTQ3NjU1OTAsLTEzMzE2MTMy
+NzYsLTExMzMwNjgxMywyMDM3NjU0MDc3LC0xMTA0NDkyODMzLD
+QyMDEyMjk4NiwtMTg4NzM2MjI4MiwtMTUzMDUwMDYwNiwyMjc1
+OTc1NDAsMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF19
 -->
