@@ -21,7 +21,7 @@ The game itself is played on a tiled grid, the size of which is determined by th
 ## Gameplay
 
 ### Goals
-The goal of this game is for the user to produce a tile with the highest tile size as defined by the difficulty level (see difficulty level table above.)
+The goal of this game is for the user to produce a tile with the highest tile size as defined by the difficulty level before the board becomes choked with trapped tiles (see difficulty level table above.)
 
 ### User Skills
 * Ability to use WASD and arrow keys
@@ -40,10 +40,10 @@ The board consists of tiles containing a numerical value.  Each tile starts with
 In certain situations, tiles can be summed multiple times in a row.  When a tile is combined 3 times in a row, it becomes a power tile.  Power tiles have the ability to combine with tiles 
 
 ### Progression and Challenge
-As the game is played, tiles are summed together.  Since tiles can onnly be summed with identical tiles, the possible moves of the player decreases as the game progresses.  Eventually the board becomes crowded with tiles that cannot be summed together.
+As the game is played, tiles are summed together.  Since tiles can onnly be summed with identical tiles, the possible moves of the player decreases as the game progresses.  Eventually the board becomes crowded with tiles that cannot be summed together and the game ends.
 
 ### Losing
-
+The goal of the game is to get
 ## Art Style
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 ## Music and Sounds
@@ -54,8 +54,8 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzE2MTMyNzYsLTExMzMwNjgxMywyMD
-M3NjU0MDc3LC0xMTA0NDkyODMzLDQyMDEyMjk4NiwtMTg4NzM2
-MjI4MiwtMTUzMDUwMDYwNiwyMjc1OTc1NDAsMTE3Mzc2OTEyMS
-wtMTc0NDg1NDI2NF19
+eyJoaXN0b3J5IjpbLTE4MDc5MzA4MzIsLTEzMzE2MTMyNzYsLT
+ExMzMwNjgxMywyMDM3NjU0MDc3LC0xMTA0NDkyODMzLDQyMDEy
+Mjk4NiwtMTg4NzM2MjI4MiwtMTUzMDUwMDYwNiwyMjc1OTc1ND
+AsMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF19
 -->
