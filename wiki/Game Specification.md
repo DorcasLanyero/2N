@@ -35,6 +35,8 @@ Additionally, each time one of the direction keys is pressed, a new tile is spaw
 ### Items and Powerups
 The board consists of tiles containing a numerical value.  Each tile starts with a value of 2 when spawned, and when tiles are combined the stationary tile's value becomes the sum of its former value and the value of the tile it combined with.
 
+In certain situations, tiles can be summed multiple times in a row.  When 
+
 ### Progression and Challenge
 
 ### Losing
@@ -49,7 +51,7 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMzM0NTI2Niw0MjAxMjI5ODYsLTE4OD
-czNjIyODIsLTE1MzA1MDA2MDYsMjI3NTk3NTQwLDExNzM3Njkx
-MjEsLTE3NDQ4NTQyNjRdfQ==
+eyJoaXN0b3J5IjpbMjEyMzM3MjQzLDQyMDEyMjk4NiwtMTg4Nz
+M2MjI4MiwtMTUzMDUwMDYwNiwyMjc1OTc1NDAsMTE3Mzc2OTEy
+MSwtMTc0NDg1NDI2NF19
 -->
