@@ -48,6 +48,8 @@ As the game progresses, eventually the board will fill up with tiles that cannot
 ## Art Style
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 ## Music and Sounds
+This game is designed as a pretty lightweight, minimalist game, and therefore we are not adding any music.
+### Sound 
 
 ## Technical Description
 
@@ -55,9 +57,9 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MzgzMTQ2MSwtMTYxODI0MzAwMywtNj
-k0NzY1NTkwLC0xMzMxNjEzMjc2LC0xMTMzMDY4MTMsMjAzNzY1
-NDA3NywtMTEwNDQ5MjgzMyw0MjAxMjI5ODYsLTE4ODczNjIyOD
-IsLTE1MzA1MDA2MDYsMjI3NTk3NTQwLDExNzM3NjkxMjEsLTE3
-NDQ4NTQyNjRdfQ==
+eyJoaXN0b3J5IjpbNDIyNjY2MjY0LC03NTM4MzE0NjEsLTE2MT
+gyNDMwMDMsLTY5NDc2NTU5MCwtMTMzMTYxMzI3NiwtMTEzMzA2
+ODEzLDIwMzc2NTQwNzcsLTExMDQ0OTI4MzMsNDIwMTIyOTg2LC
+0xODg3MzYyMjgyLC0xNTMwNTAwNjA2LDIyNzU5NzU0MCwxMTcz
+NzY5MTIxLC0xNzQ0ODU0MjY0XX0=
 -->
