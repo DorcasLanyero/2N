@@ -38,7 +38,7 @@ The board consists of tiles containing a numerical value.  Each tile starts with
 In certain situations, tiles can be summed multiple times in a row.  When a tile is combined 3 times in a row, it becomes a power tile.  Power tiles have the ability to combine with tiles 
 
 ### Progression and Challenge
-As players 
+As the game is played, tiles are summed together.  Since tiles can onnly be summed with identical tiles, the possible moves of the player decreases as the game progresses.  Eventually 
 
 ### Losing
 
@@ -52,7 +52,8 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzY1NDA3NywtMTEwNDQ5MjgzMyw0Mj
-AxMjI5ODYsLTE4ODczNjIyODIsLTE1MzA1MDA2MDYsMjI3NTk3
-NTQwLDExNzM3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
+eyJoaXN0b3J5IjpbLTEyNjgxMDcxMTEsMjAzNzY1NDA3NywtMT
+EwNDQ5MjgzMyw0MjAxMjI5ODYsLTE4ODczNjIyODIsLTE1MzA1
+MDA2MDYsMjI3NTk3NTQwLDExNzM3NjkxMjEsLTE3NDQ4NTQyNj
+RdfQ==
 -->
