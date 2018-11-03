@@ -49,7 +49,8 @@ As the game progresses, eventually the board will fill up with tiles that cannot
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 ## Music and Sounds
 This game is designed as a pretty lightweight, minimalist game, and therefore we are not adding any music.
-### Sound 
+### Sound effects
+* Moving pieces https://www.soundsnap.com/fantasy_game_action_collect_stone_c_wav
 
 ## Technical Description
 
@@ -57,7 +58,7 @@ This game is designed as a pretty lightweight, minimalist game, and therefore we
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIyNjY2MjY0LC03NTM4MzE0NjEsLTE2MT
+eyJoaXN0b3J5IjpbMjY0MjMwMDU2LC03NTM4MzE0NjEsLTE2MT
 gyNDMwMDMsLTY5NDc2NTU5MCwtMTMzMTYxMzI3NiwtMTEzMzA2
 ODEzLDIwMzc2NTQwNzcsLTExMDQ0OTI4MzMsNDIwMTIyOTg2LC
 0xODg3MzYyMjgyLC0xNTMwNTAwNjA2LDIyNzU5NzU0MCwxMTcz
