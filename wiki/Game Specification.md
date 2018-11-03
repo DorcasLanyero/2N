@@ -45,13 +45,14 @@ As the game is played, tiles are summed together.  Since tiles can onnly be summ
 ### Losing
 As the game progresses, eventually the board will fill up with tiles that cannot be summed.  If the board fills up before the player creates a tile with the maximum value for the level, the game ends.  In single-player mode, this means the player has lost.  In multiplayer-mode, the session ends when one of the players either creates a maximum-value tile or fills up their board with tiles that can't be summed.  At that point, the player with the highest score wins and all other players lose the round.
 
-It is possible to attain a tile with a higher value than the maximum tile value.  If a tile with a number close enough to the maximum value becomes a power tile, the resulting value will be greater than the maximum value.  The behavior of the game is the same as if 
+It is possible to attain a tile with a higher value than the maximum tile value.  If a tile with a number close enough to the maximum value becomes a power tile, the resulting value will be greater than the maximum value.  The behavior of the game is the same as if the maximum value had been attained, and the higher score is recorded.
 
 ## Art Style
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 ## Music and Sounds
 This game is designed as a pretty lightweight, minimalist game, and therefore we are not adding any music.
+
 ### Sound effects
 * Moving pieces https://www.soundsnap.com/fantasy_game_action_collect_stone_c_wav
 
@@ -61,9 +62,10 @@ This game is designed as a pretty lightweight, minimalist game, and therefore we
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDYwNTcxOSwyNjQyMzAwNTYsLTc1Mz
-gzMTQ2MSwtMTYxODI0MzAwMywtNjk0NzY1NTkwLC0xMzMxNjEz
-Mjc2LC0xMTMzMDY4MTMsMjAzNzY1NDA3NywtMTEwNDQ5MjgzMy
-w0MjAxMjI5ODYsLTE4ODczNjIyODIsLTE1MzA1MDA2MDYsMjI3
-NTk3NTQwLDExNzM3NjkxMjEsLTE3NDQ4NTQyNjRdfQ==
+eyJoaXN0b3J5IjpbLTU5ODEzMTMxMSwtODYwNjA1NzE5LDI2ND
+IzMDA1NiwtNzUzODMxNDYxLC0xNjE4MjQzMDAzLC02OTQ3NjU1
+OTAsLTEzMzE2MTMyNzYsLTExMzMwNjgxMywyMDM3NjU0MDc3LC
+0xMTA0NDkyODMzLDQyMDEyMjk4NiwtMTg4NzM2MjI4MiwtMTUz
+MDUwMDYwNiwyMjc1OTc1NDAsMTE3Mzc2OTEyMSwtMTc0NDg1ND
+I2NF19
 -->
