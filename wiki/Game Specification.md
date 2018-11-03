@@ -43,7 +43,7 @@ In certain situations, tiles can be summed multiple times in a row.  When a tile
 As the game is played, tiles are summed together.  Since tiles can onnly be summed with identical tiles, the possible moves of the player decreases as the game progresses.  Eventually the board becomes crowded with tiles that cannot be summed together and the game ends.
 
 ### Losing
-The goal of the game is to get
+If the player 
 ## Art Style
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 ## Music and Sounds
@@ -54,8 +54,8 @@ Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDc5MzA4MzIsLTEzMzE2MTMyNzYsLT
-ExMzMwNjgxMywyMDM3NjU0MDc3LC0xMTA0NDkyODMzLDQyMDEy
-Mjk4NiwtMTg4NzM2MjI4MiwtMTUzMDUwMDYwNiwyMjc1OTc1ND
-AsMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF19
+eyJoaXN0b3J5IjpbLTY5NDc2NTU5MCwtMTMzMTYxMzI3NiwtMT
+EzMzA2ODEzLDIwMzc2NTQwNzcsLTExMDQ0OTI4MzMsNDIwMTIy
+OTg2LC0xODg3MzYyMjgyLC0xNTMwNTAwNjA2LDIyNzU5NzU0MC
+wxMTczNzY5MTIxLC0xNzQ0ODU0MjY0XX0=
 -->
