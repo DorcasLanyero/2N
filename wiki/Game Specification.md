@@ -17,7 +17,7 @@ The game itself is played on a tiled grid, the size of which is determined by th
 | 8192              | 6x6       |
 
 ## Theme
-
+TODO
 ## Gameplay
 
 ### Goals
@@ -67,11 +67,11 @@ Xamarin Forms will be used for the Windows application, and UrhoSharp for the Ho
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE5NTUyMDQ3LDE4MzcxNDQ5NTUsLTE4OD
-MyNDcxNDQsLTEwMDM5MDE0NjYsMjYwMDYxMzQ3LC04NjA2MDU3
-MTksMjY0MjMwMDU2LC03NTM4MzE0NjEsLTE2MTgyNDMwMDMsLT
-Y5NDc2NTU5MCwtMTMzMTYxMzI3NiwtMTEzMzA2ODEzLDIwMzc2
-NTQwNzcsLTExMDQ0OTI4MzMsNDIwMTIyOTg2LC0xODg3MzYyMj
-gyLC0xNTMwNTAwNjA2LDIyNzU5NzU0MCwxMTczNzY5MTIxLC0x
-NzQ0ODU0MjY0XX0=
+eyJoaXN0b3J5IjpbMTc5NjU0NzYyNSwyMTk1NTIwNDcsMTgzNz
+E0NDk1NSwtMTg4MzI0NzE0NCwtMTAwMzkwMTQ2NiwyNjAwNjEz
+NDcsLTg2MDYwNTcxOSwyNjQyMzAwNTYsLTc1MzgzMTQ2MSwtMT
+YxODI0MzAwMywtNjk0NzY1NTkwLC0xMzMxNjEzMjc2LC0xMTMz
+MDY4MTMsMjAzNzY1NDA3NywtMTEwNDQ5MjgzMyw0MjAxMjI5OD
+YsLTE4ODczNjIyODIsLTE1MzA1MDA2MDYsMjI3NTk3NTQwLDEx
+NzM3NjkxMjFdfQ==
 -->
