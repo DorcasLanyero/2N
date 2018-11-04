@@ -22,9 +22,9 @@
 ## Beta
 |**Feature**| **Type** |**Developer**|**Status**|
 |-----------|----------|-------------|----------|
-| Game timing| Required | Matthew Miller & Dorcas Lanyero| Not Started |
-| Animated tiles | Required | Matthew Miller & Dorcas Lanyero | Not Started |
-| HoloLens version | Required | Taylor Shuler | In Progress|
+| Game timing| Optional | Matthew Miller & Dorcas Lanyero| Not Started |
+| Animated tiles | Optional | Matthew Miller & Dorcas Lanyero | Not Started |
+| HoloLens version | Optional | Taylor Shuler | In Progress|
 >**Due**
 >11/20/2018
 >10:00pm
@@ -45,5 +45,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI3MDQ0MjEyXX0=
+eyJoaXN0b3J5IjpbNzA0MDcwMjI5LDYyNzA0NDIxMl19
 -->
