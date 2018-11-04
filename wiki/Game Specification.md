@@ -57,13 +57,17 @@ This game is designed as a pretty lightweight, minimalist game, and therefore we
 * Moving pieces https://www.soundsnap.com/fantasy_game_action_collect_stone_c_wav
 
 ## Technical Description
-The game will be available on two different platforms sharing a common game model
+The game will be available on the following platforms:
+* Windows
+* Hololens
+
+While the codebases for these apps will be separate, they will shar a common model.  Since the UI is rather sparse, there's not a whole lot of 
 
 ## Other Ideas (Optional)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTcwNjUzNzksMjYwMDYxMzQ3LC04Nj
+eyJoaXN0b3J5IjpbLTEwMDM5MDE0NjYsMjYwMDYxMzQ3LC04Nj
 A2MDU3MTksMjY0MjMwMDU2LC03NTM4MzE0NjEsLTE2MTgyNDMw
 MDMsLTY5NDc2NTU5MCwtMTMzMTYxMzI3NiwtMTEzMzA2ODEzLD
 IwMzc2NTQwNzcsLTExMDQ0OTI4MzMsNDIwMTIyOTg2LC0xODg3
