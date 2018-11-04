@@ -1,7 +1,7 @@
 # Game Specification UNFINISHED
 Author: Matthew Miller
 Date: 11-2-2018
-Version: 1.0 rev1
+Version: 1.0 rev2
 
 ## Project Description
 This design document describes 2^N^, a simple 2D, skill-based tile game based off the game [2048](https://play2048.co/).  This implementation includes several innovations including multiple levels of difficulty (hence the name), networked multi-player speed competitions, and support for multiple platforms.
@@ -67,7 +67,7 @@ Xamarin Forms will be used for the Windows application, and UrhoSharp for the Ho
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxMjAyMDAwLDE4MzcxNDQ5NTUsLTE4OD
+eyJoaXN0b3J5IjpbMjE5NTUyMDQ3LDE4MzcxNDQ5NTUsLTE4OD
 MyNDcxNDQsLTEwMDM5MDE0NjYsMjYwMDYxMzQ3LC04NjA2MDU3
 MTksMjY0MjMwMDU2LC03NTM4MzE0NjEsLTE2MTgyNDMwMDMsLT
 Y5NDc2NTU5MCwtMTMzMTYxMzI3NiwtMTEzMzA2ODEzLDIwMzc2
