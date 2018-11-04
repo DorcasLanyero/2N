@@ -66,16 +66,12 @@ While the codebases for these apps will be separate, they will share a common mo
 Xamarin Forms will be used for the Windows application, and UrhoSharp for the Hololens application.
 
 
-
-## Other Ideas (Optional)
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1MjQ3ODc2LC0xODgzMjQ3MTQ0LC0xMD
-AzOTAxNDY2LDI2MDA2MTM0NywtODYwNjA1NzE5LDI2NDIzMDA1
-NiwtNzUzODMxNDYxLC0xNjE4MjQzMDAzLC02OTQ3NjU1OTAsLT
-EzMzE2MTMyNzYsLTExMzMwNjgxMywyMDM3NjU0MDc3LC0xMTA0
-NDkyODMzLDQyMDEyMjk4NiwtMTg4NzM2MjI4MiwtMTUzMDUwMD
-YwNiwyMjc1OTc1NDAsMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF19
-
+eyJoaXN0b3J5IjpbMTgzNzE0NDk1NSwtMTg4MzI0NzE0NCwtMT
+AwMzkwMTQ2NiwyNjAwNjEzNDcsLTg2MDYwNTcxOSwyNjQyMzAw
+NTYsLTc1MzgzMTQ2MSwtMTYxODI0MzAwMywtNjk0NzY1NTkwLC
+0xMzMxNjEzMjc2LC0xMTMzMDY4MTMsMjAzNzY1NDA3NywtMTEw
+NDQ5MjgzMyw0MjAxMjI5ODYsLTE4ODczNjIyODIsLTE1MzA1MD
+A2MDYsMjI3NTk3NTQwLDExNzM3NjkxMjEsLTE3NDQ4NTQyNjRd
+fQ==
 -->
