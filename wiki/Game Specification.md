@@ -57,16 +57,16 @@ This game is designed as a pretty lightweight, minimalist game, and therefore we
 * Moving pieces https://www.soundsnap.com/fantasy_game_action_collect_stone_c_wav
 
 ## Technical Description
-
+The game will be available on two different platforms sharing a common game model
 
 ## Other Ideas (Optional)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYwMDYxMzQ3LC04NjA2MDU3MTksMjY0Mj
-MwMDU2LC03NTM4MzE0NjEsLTE2MTgyNDMwMDMsLTY5NDc2NTU5
-MCwtMTMzMTYxMzI3NiwtMTEzMzA2ODEzLDIwMzc2NTQwNzcsLT
-ExMDQ0OTI4MzMsNDIwMTIyOTg2LC0xODg3MzYyMjgyLC0xNTMw
-NTAwNjA2LDIyNzU5NzU0MCwxMTczNzY5MTIxLC0xNzQ0ODU0Mj
-Y0XX0=
+eyJoaXN0b3J5IjpbLTE5MTcwNjUzNzksMjYwMDYxMzQ3LC04Nj
+A2MDU3MTksMjY0MjMwMDU2LC03NTM4MzE0NjEsLTE2MTgyNDMw
+MDMsLTY5NDc2NTU5MCwtMTMzMTYxMzI3NiwtMTEzMzA2ODEzLD
+IwMzc2NTQwNzcsLTExMDQ0OTI4MzMsNDIwMTIyOTg2LC0xODg3
+MzYyMjgyLC0xNTMwNTAwNjA2LDIyNzU5NzU0MCwxMTczNzY5MT
+IxLC0xNzQ0ODU0MjY0XX0=
 -->
