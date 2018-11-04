@@ -11,7 +11,7 @@
 | Help screen | Required | Dorcas Lanyero | Not Started |
 | Difficulty levels | Required | Dorcas Lanyero| Not Started |
 | Scores | Required | Dorcas Lanyero | Not Started |
-| Hight scores | Required | Dorcas Lanyero | In progress |
+| High scores | Required | Dorcas Lanyero | In progress |
 | Basic game play | Required | Matthew Miller | In Progress |
 | Sound effects | Optional | Matthew Miller | Not Started |
 | Cheat mode | Required | Matthew Miller | Not Started |
@@ -45,5 +45,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTU5MTg4Ml19
+eyJoaXN0b3J5IjpbNjI3MDQ0MjEyXX0=
 -->
