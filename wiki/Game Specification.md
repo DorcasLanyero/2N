@@ -63,16 +63,19 @@ The game will be available on the following platforms:
 
 While the codebases for these apps will be separate, they will share a common model.  
 
-Xamarin Forms will be used for the Windows application, and UrhoSharp for the Hololens application
+Xamarin Forms will be used for the Windows application, and UrhoSharp for the Hololens application.
+
+
 
 ## Other Ideas (Optional)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODMyNDcxNDQsLTEwMDM5MDE0NjYsMj
-YwMDYxMzQ3LC04NjA2MDU3MTksMjY0MjMwMDU2LC03NTM4MzE0
-NjEsLTE2MTgyNDMwMDMsLTY5NDc2NTU5MCwtMTMzMTYxMzI3Ni
-wtMTEzMzA2ODEzLDIwMzc2NTQwNzcsLTExMDQ0OTI4MzMsNDIw
-MTIyOTg2LC0xODg3MzYyMjgyLC0xNTMwNTAwNjA2LDIyNzU5Nz
-U0MCwxMTczNzY5MTIxLC0xNzQ0ODU0MjY0XX0=
+eyJoaXN0b3J5IjpbNjI1MjQ3ODc2LC0xODgzMjQ3MTQ0LC0xMD
+AzOTAxNDY2LDI2MDA2MTM0NywtODYwNjA1NzE5LDI2NDIzMDA1
+NiwtNzUzODMxNDYxLC0xNjE4MjQzMDAzLC02OTQ3NjU1OTAsLT
+EzMzE2MTMyNzYsLTExMzMwNjgxMywyMDM3NjU0MDc3LC0xMTA0
+NDkyODMzLDQyMDEyMjk4NiwtMTg4NzM2MjI4MiwtMTUzMDUwMD
+YwNiwyMjc1OTc1NDAsMTE3Mzc2OTEyMSwtMTc0NDg1NDI2NF19
+
 -->
