@@ -61,16 +61,18 @@ The game will be available on the following platforms:
 * Windows
 * Hololens
 
-While the codebases for these apps will be separate, they will shar a common model.  Since the UI is rather sparse, there's not a whole lot of 
+While the codebases for these apps will be separate, they will share a common model.  
+
+Xamaron
 
 ## Other Ideas (Optional)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDM5MDE0NjYsMjYwMDYxMzQ3LC04Nj
-A2MDU3MTksMjY0MjMwMDU2LC03NTM4MzE0NjEsLTE2MTgyNDMw
-MDMsLTY5NDc2NTU5MCwtMTMzMTYxMzI3NiwtMTEzMzA2ODEzLD
-IwMzc2NTQwNzcsLTExMDQ0OTI4MzMsNDIwMTIyOTg2LC0xODg3
-MzYyMjgyLC0xNTMwNTAwNjA2LDIyNzU5NzU0MCwxMTczNzY5MT
-IxLC0xNzQ0ODU0MjY0XX0=
+eyJoaXN0b3J5IjpbLTEyMDkyNDU4NzcsLTEwMDM5MDE0NjYsMj
+YwMDYxMzQ3LC04NjA2MDU3MTksMjY0MjMwMDU2LC03NTM4MzE0
+NjEsLTE2MTgyNDMwMDMsLTY5NDc2NTU5MCwtMTMzMTYxMzI3Ni
+wtMTEzMzA2ODEzLDIwMzc2NTQwNzcsLTExMDQ0OTI4MzMsNDIw
+MTIyOTg2LC0xODg3MzYyMjgyLC0xNTMwNTAwNjA2LDIyNzU5Nz
+U0MCwxMTczNzY5MTIxLC0xNzQ0ODU0MjY0XX0=
 -->
