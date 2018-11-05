@@ -2,49 +2,31 @@ using TWON.API;
 
 namespace TWON
 {
-	public enum EnumFacing
+	class Game : IGameData
 	{
-		NORTH, SOUTH, EAST, WEST
-	}
-
-	public class Game : IGameData
-	{
-		public Tile[] Tiles { get; set; }
-		private readonly int _columns;
+		public Tile[,] Tiles { get; private set; }
 
 		public Game(int max)
 		{
-			Tiles = new Tile[max * max];
-			_columns = max;
+			Tiles = new Tile[max, max];
 
-			for (int i = 0; i < max * max; ++i)
-			{
-				Tiles[i] = new Tile();
-			}
-		}
-
-		public Game() : this(4) { }
-
-		// row # of item at idx
-		private int GetRowIndex(int idx)
-		{
-			return idx / _columns;
-		}
-
-		// column # of item at idx
-		private int GetColumnIndex(int idx)
-		{
-			return idx % _columns;
+			//for (int x = 0; x < maxTileValue; ++x)
+			//{
+			//	for (int y = 0; y < maxTileValue; ++y)
+			//	{
+			//		Tiles[x, y] = new Tile();
+			//	}
+			//}
 		}
 
 		public void PlaceTiles()
 		{
-			// randomly change tile values to 2 on the grid
+			// randomly place tiles w/ the value 2 in the grid
 		}
 
-		public void ShiftTiles(EnumFacing dir)
+		public void ShiftTiles()
 		{
-			// shift all tile values on the grid in the given direction
+			// shift all tiles on the grid in the given direction
 		}
 
 		public string Save()
@@ -57,4 +39,28 @@ namespace TWON
 			return data.XmlDeserializeFromString<Game>();
 		}
 	}
+
+	class CheatMode:Game
+	{
+		//CheaMode condtructor calls the base constructor
+		public CheatMode(int Max):base(Max)
+		{
+
+		}
+
+		//converts the tiles to be in cheat mode
+		public void ActivateCheatMode()
+		{
+
+		}
+
+		//Reversts tiles back to normal
+		public void DeactivateCheatMode()
+		{
+
+		}
+
+
+	}
+
 }
