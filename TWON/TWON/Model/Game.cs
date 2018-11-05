@@ -2,9 +2,9 @@ using TWON.API;
 
 namespace TWON
 {
-	public enum EnumFacing
+	public enum Direction
 	{
-		NORTH, SOUTH, EAST, WEST
+		Up, Down, Left, Right
 	}
 
 	public class Game : IGameData
@@ -26,13 +26,13 @@ namespace TWON
 		public Game() : this(4) { }
 
 		// row # of item at idx
-		private int GetRowIndex(int idx)
+		private int GetRow(int idx)
 		{
 			return idx / _columns;
 		}
 
 		// column # of item at idx
-		private int GetColumnIndex(int idx)
+		private int GetColumn(int idx)
 		{
 			return idx % _columns;
 		}
@@ -42,7 +42,7 @@ namespace TWON
 			// randomly change tile values to 2 on the grid
 		}
 
-		public void ShiftTiles(EnumFacing dir)
+		public void ShiftTiles(Direction dir)
 		{
 			// shift all tile values on the grid in the given direction
 		}
