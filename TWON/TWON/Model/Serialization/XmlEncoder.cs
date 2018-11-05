@@ -20,17 +20,17 @@ namespace TWON
 			return sb.ToString();
 		}
 
-		public static T XmlDeserializeFromString<T>(this string objectData)
+		public static T XmlDeserializeFromString<T>(this string obj)
 		{
-			return (T)XmlDeserializeFromString(objectData, typeof(T));
+			return (T)XmlDeserializeFromString(obj, typeof(T));
 		}
 
-		public static object XmlDeserializeFromString(this string objectData, Type type)
+		public static object XmlDeserializeFromString(this string obj, Type type)
 		{
 			var serializer = new XmlSerializer(type);
 			object result;
 
-			using (var reader = new StringReader(objectData))
+			using (var reader = new StringReader(obj))
 			{
 				result = serializer.Deserialize(reader);
 			}

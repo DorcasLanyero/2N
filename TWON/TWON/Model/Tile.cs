@@ -2,13 +2,9 @@ using Xamarin.Forms;
 
 namespace TWON
 {
-	class Tile
+	public class Tile
 	{
 		public int Value { get; set; }
-
-		// NOTE: These may not be needed at all!
-		public int X { get; set; }
-		public int Y { get; set; }
 
 		public Tile()
 		{
