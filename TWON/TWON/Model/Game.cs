@@ -2,9 +2,21 @@ using TWON.API;
 
 namespace TWON
 {
+<<<<<<< HEAD
 	class Game : IGameData
 	{
 		public Tile[,] Tiles { get; private set; }
+=======
+	public enum Direction
+	{
+		Up, Down, Left, Right
+	}
+
+	public class Game : IGameData
+	{
+		public Tile[] Tiles { get; set; }
+		private readonly int _columns;
+>>>>>>> 95b6842e817730493b1d142775607760da5fc078
 
 		public Game(int max)
 		{
@@ -24,12 +36,22 @@ namespace TWON
 			// randomly place tiles w/ the value 2 in the grid
 		}
 
+<<<<<<< HEAD
 		public void ShiftTiles()
+=======
+		// row # of item at idx
+		private int GetRow(int idx)
+>>>>>>> 95b6842e817730493b1d142775607760da5fc078
 		{
 			// shift all tiles on the grid in the given direction
 		}
 
+<<<<<<< HEAD
 		public string Save()
+=======
+		// column # of item at idx
+		private int GetColumn(int idx)
+>>>>>>> 95b6842e817730493b1d142775607760da5fc078
 		{
 			return this.XmlSerializeToString();
 		}
@@ -40,10 +62,14 @@ namespace TWON
 		}
 	}
 
+<<<<<<< HEAD
 	class CheatMode:Game
 	{
 		//CheaMode condtructor calls the base constructor
 		public CheatMode(int Max):base(Max)
+=======
+		public void ShiftTiles(Direction dir)
+>>>>>>> 95b6842e817730493b1d142775607760da5fc078
 		{
 
 		}

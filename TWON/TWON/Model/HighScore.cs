@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace TWON
@@ -6,7 +5,7 @@ namespace TWON
 	class HighScore
 	{
 		//Holds names of players and their high scores.
-		private Dictionary<string, int> High_Score { get; set;}
+		private Dictionary<string, int> High_Score { get; set; }
 
 		//Constructor for the Highscore class
 		public HighScore()
