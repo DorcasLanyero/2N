@@ -48,6 +48,7 @@ As the game progresses, eventually the board will fill up with tiles that cannot
 It is possible to attain a tile with a higher value than the maximum tile value.  If a tile with a number close enough to the maximum value becomes a power tile, the resulting value will be greater than the maximum value.  The behavior of the game is the same as if the maximum value had been attained, and the higher score is recorded.
 
 ## Art Style
+The game is themed in a cartoon, medieval style.  Tiles move across a board laid out on top of a drawing of a medieval castle.  
 Assets: https://www.kenney.nl/assets/platformer-pack-medieval
 
 ## Music and Sounds
@@ -67,11 +68,11 @@ Xamarin Forms will be used for the Windows application, and UrhoSharp for the Ho
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTY2MzUyOSwyMTk1NTIwNDcsMTgzNz
-E0NDk1NSwtMTg4MzI0NzE0NCwtMTAwMzkwMTQ2NiwyNjAwNjEz
-NDcsLTg2MDYwNTcxOSwyNjQyMzAwNTYsLTc1MzgzMTQ2MSwtMT
-YxODI0MzAwMywtNjk0NzY1NTkwLC0xMzMxNjEzMjc2LC0xMTMz
-MDY4MTMsMjAzNzY1NDA3NywtMTEwNDQ5MjgzMyw0MjAxMjI5OD
-YsLTE4ODczNjIyODIsLTE1MzA1MDA2MDYsMjI3NTk3NTQwLDEx
-NzM3NjkxMjFdfQ==
+eyJoaXN0b3J5IjpbLTQ2NDQxMTI1MiwyMDcxNjYzNTI5LDIxOT
+U1MjA0NywxODM3MTQ0OTU1LC0xODgzMjQ3MTQ0LC0xMDAzOTAx
+NDY2LDI2MDA2MTM0NywtODYwNjA1NzE5LDI2NDIzMDA1NiwtNz
+UzODMxNDYxLC0xNjE4MjQzMDAzLC02OTQ3NjU1OTAsLTEzMzE2
+MTMyNzYsLTExMzMwNjgxMywyMDM3NjU0MDc3LC0xMTA0NDkyOD
+MzLDQyMDEyMjk4NiwtMTg4NzM2MjI4MiwtMTUzMDUwMDYwNiwy
+Mjc1OTc1NDBdfQ==
 -->
