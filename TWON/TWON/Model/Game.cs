@@ -2,31 +2,49 @@ using TWON.API;
 
 namespace TWON
 {
-	class Game : IGameData
+	public enum EnumFacing
 	{
-		public Tile[,] Tiles { get; private set; }
+		NORTH, SOUTH, EAST, WEST
+	}
+
+	public class Game : IGameData
+	{
+		public Tile[] Tiles { get; set; }
+		private readonly int _columns;
 
 		public Game(int max)
 		{
-			Tiles = new Tile[max, max];
+			Tiles = new Tile[max * max];
+			_columns = max;
 
-			//for (int x = 0; x < maxTileValue; ++x)
-			//{
-			//	for (int y = 0; y < maxTileValue; ++y)
-			//	{
-			//		Tiles[x, y] = new Tile();
-			//	}
-			//}
+			for (int i = 0; i < max * max; ++i)
+			{
+				Tiles[i] = new Tile();
+			}
+		}
+
+		public Game() : this(4) { }
+
+		// row # of item at idx
+		private int GetRowIndex(int idx)
+		{
+			return idx / _columns;
+		}
+
+		// column # of item at idx
+		private int GetColumnIndex(int idx)
+		{
+			return idx % _columns;
 		}
 
 		public void PlaceTiles()
 		{
-			// randomly place tiles w/ the value 2 in the grid
+			// randomly change tile values to 2 on the grid
 		}
 
 		public void ShiftTiles(EnumFacing dir)
 		{
-			// shift all tiles on the grid in the given direction
+			// shift all tile values on the grid in the given direction
 		}
 
 		public string Save()

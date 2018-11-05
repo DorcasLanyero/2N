@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 namespace TWON.Testing
 {
 	[TestFixture]
-    public class Testing
-    {
+	class GameTesting
+	{
 		[Test]
 		public void MyFirstTest()
 		{
 
 		}
-    }
+	}
 }
