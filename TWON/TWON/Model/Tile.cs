@@ -5,12 +5,7 @@ namespace TWON
 	public class Tile
 	{
 		public int Value { get; set; }
-
-		public Tile()
-		{
-			Value = 2;
-		}
-
+		
 		public Color GetColor()
 		{
 			switch (Value)
