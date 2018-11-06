@@ -1,5 +1,3 @@
-using TWON.API;
-
 namespace TWON
 {
 	public enum Direction
@@ -7,12 +5,12 @@ namespace TWON
 		Up, Down, Left, Right
 	}
 
-	public class Game : IGameData
+	public class Grid
 	{
 		public Tile[] Tiles { get; set; }
 		private readonly int _columns;
 
-		public Game(int max)
+		public Grid(int max)
 		{
 			_columns = max;
 			int gridSize = max * max;
@@ -24,7 +22,7 @@ namespace TWON
 			}
 		}
 
-		public Game() : this(4) { }
+		public Grid() : this(4) { }
 
 		// row # of item at idx
 		private int GetRow(int idx)
@@ -53,9 +51,9 @@ namespace TWON
 			return this.XmlSerializeToString();
 		}
 
-		public IGameData Load(string data)
+		public Grid Load(string data)
 		{
-			return data.XmlDeserializeFromString<Game>();
+			return data.XmlDeserializeFromString<Grid>();
 		}
 	}
 }

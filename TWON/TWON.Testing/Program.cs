@@ -10,8 +10,8 @@ namespace TWON
 	{
 		static void Main(string[] args)
 		{
-			Game game = new Game();
-			Console.WriteLine(game.Save());
+			Grid grid = new Grid();
+			Console.WriteLine(grid.Save());
 		}
 	}
 }
