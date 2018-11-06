@@ -9,14 +9,17 @@ namespace TWON
 	{
 		public Tile[] Tiles { get; set; }
 		private readonly int _columns;
+		private readonly int _gridSize;
+
+		protected static CryptoRandom rand = new CryptoRandom();
 
 		public Grid(int max)
 		{
 			_columns = max;
-			int gridSize = max * max;
-			Tiles = new Tile[gridSize];
+			_gridSize = max * max;
+			Tiles = new Tile[_gridSize];
 
-			for (int i = 0; i < gridSize; ++i)
+			for (int i = 0; i < _gridSize; ++i)
 			{
 				Tiles[i] = new Tile();
 			}
@@ -36,9 +39,20 @@ namespace TWON
 			return idx % _columns;
 		}
 
-		public void PlaceTiles()
+		public void PlaceTile()
 		{
-			// randomly change tile values to 2 on the grid
+			// randomly place one 2 on an empty tile
+			int idx = rand.Next(_gridSize);
+			bool searching = true;
+
+			while (searching)
+			{
+				if (Tiles[idx].Value == 0)
+				{
+					Tiles[idx].Value = 2;
+					searching = false;
+				}
+			}
 		}
 
 		public void ShiftTiles(Direction dir)
