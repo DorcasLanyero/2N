@@ -42,11 +42,12 @@ namespace TWON
 		public void PlaceTile()
 		{
 			// randomly place one 2 on an empty tile
-			int idx = rand.Next(_gridSize);
 			bool searching = true;
 
 			while (searching)
 			{
+				int idx = rand.Next(_gridSize);
+
 				if (Tiles[idx].Value == 0)
 				{
 					Tiles[idx].Value = 2;

@@ -11,6 +11,7 @@ namespace TWON
 		static void Main(string[] args)
 		{
 			Grid grid = new Grid();
+			grid.PlaceTile();
 			Console.WriteLine(grid.Save());
 		}
 	}
