@@ -3,7 +3,7 @@ using NUnit.Framework;
 namespace TWON.Testing
 {
 	[TestFixture]
-	public class ModelTesting
+	public class ModelTests
 	{
 		//Tests the CPlaceTiles method
 		[Test]

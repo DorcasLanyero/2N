@@ -3,7 +3,7 @@ using NUnit.Framework;
 namespace TWON.Testing
 {
 	[TestFixture]
-	public class HighScoreTesting
+	public class HighScoreTests
 	{
 
 		//Tests the CheckIfHighScore method

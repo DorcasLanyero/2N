@@ -39,26 +39,27 @@ namespace TWON
 			return idx % _columns;
 		}
 
+		// randomly place one 2 on an empty tile
 		public void PlaceTile()
 		{
-			// randomly place one 2 on an empty tile
 			bool searching = true;
 
 			while (searching)
 			{
-				int idx = rand.Next(_gridSize);
+				Tile tile = Tiles[rand.Next(_gridSize)];
 
-				if (Tiles[idx].Value == 0)
+				if (tile.Value == 0)
 				{
-					Tiles[idx].Value = 2;
+					tile.Value = 2;
 					searching = false;
 				}
 			}
 		}
 
+		// shift all tile values on the grid in the given direction
 		public void ShiftTiles(Direction dir)
 		{
-			// shift all tile values on the grid in the given direction
+
 		}
 
 		public string Save()
