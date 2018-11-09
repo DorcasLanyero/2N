@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using static TWON.Direction;
+
 namespace TWON
 {
 	public enum Direction
@@ -12,6 +15,36 @@ namespace TWON
 		private readonly int _gridSize;
 
 		protected static CryptoRandom rand = new CryptoRandom();
+		public List<List<Direction>> directions = new List<List<Direction>>()
+		{
+			/*
+			 * Attempt checking clockwise
+			 * 
+			 * [00, 01, 02, 03]
+			 * [04, 05, 06, 07]
+			 * [08, 09, 10, 11]
+			 * [12, 13, 14, 15]
+			 */
+			new List<Direction>() { Right, Down },
+			new List<Direction>() { Right, Down, Left },
+			new List<Direction>() { Right, Down, Left },
+			new List<Direction>() { Down, Left },
+
+			new List<Direction>() { Up, Right, Down },
+			new List<Direction>() { Up, Right, Down, Left },
+			new List<Direction>() { Up, Right, Down, Left },
+			new List<Direction>() { Up, Down, Left },
+
+			new List<Direction>() { Up, Right, Down },
+			new List<Direction>() { Up, Right, Down, Left },
+			new List<Direction>() { Up, Right, Down, Left },
+			new List<Direction>() { Up, Down, Left },
+
+			new List<Direction>() { Up, Right },
+			new List<Direction>() { Up, Right, Left },
+			new List<Direction>() { Up, Right, Left },
+			new List<Direction>() { Up, Left },
+		};
 
 		public Grid(int max)
 		{
