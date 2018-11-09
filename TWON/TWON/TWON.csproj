@@ -16,4 +16,10 @@
   <ItemGroup>
     <Folder Include="View\Model\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="View\Pages\GamePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>
