@@ -17,6 +17,7 @@ namespace TWON
 			GameBtn.Clicked += GameBtn_Clicked;
 			MainLayout.Children.Add(GameBtn);
 
+			// Matthew Miller
 			// https://stackoverflow.com/questions/24929977/add-a-child-to-the-parent-on-button-click-xamarin-forms
 			Content = MainLayout; 
 		}
