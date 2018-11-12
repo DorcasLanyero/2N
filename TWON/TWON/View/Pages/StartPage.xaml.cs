@@ -17,6 +17,6 @@ namespace TWON.View.Pages
 			InitializeComponent ();
 		}
 
-		//Create event handlers for the different buttons on the screen. 
+		//Create event handlers for the different buttons on the start screen. 
 	}
 }

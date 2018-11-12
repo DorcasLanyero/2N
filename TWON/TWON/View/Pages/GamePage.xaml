@@ -1,12 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TWON.View.Pages.GamePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+		<AbsoluteLayout BackgroundColor="LightBlue">
+			<Image Source="background.png" />
+			<Button Text="←" AbsoluteLayout.LayoutBounds="20, 20, 38, 38" Clicked="BackButton_Clicked"/>
+			<Grid x:Name="GameGrid" BackgroundColor="#a56729" Padding="5" AbsoluteLayout.LayoutBounds="280, 270, 228, 228">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="50"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="50" />
+					<ColumnDefinition Width="50" />
+					<ColumnDefinition Width="50" />
+					<ColumnDefinition Width="50" />
+				</Grid.ColumnDefinitions>
+
+			</Grid>
+		</AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

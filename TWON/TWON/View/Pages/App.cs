@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using TWON.View.Pages;
 
 namespace TWON
 {
@@ -9,7 +10,7 @@ namespace TWON
 	{
 		public App()
 		{
-			MainPage = new MainPage();
+			MainPage = new StartPage();
 		}
 
 		protected override void OnStart()
