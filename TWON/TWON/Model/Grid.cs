@@ -61,13 +61,13 @@ namespace TWON
 		public Grid() : this(4) { }
 
 		// row # of item at idx
-		private int GetRow(int idx)
+		public int GetRow(int idx)
 		{
 			return idx / _columns;
 		}
 
 		// column # of item at idx
-		private int GetColumn(int idx)
+		public int GetColumn(int idx)
 		{
 			return idx % _columns;
 		}
