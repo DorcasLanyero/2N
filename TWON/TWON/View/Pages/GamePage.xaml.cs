@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace TWON.View.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -16,33 +17,38 @@ namespace TWON.View.Pages
 		{
 			InitializeComponent();
 
-			for (int i=0; i<4;i++)
+			var GameModelGrid = new Grid();
+
+			foreach (Tile tile in GameModelGrid.Tiles)
 			{
-				for (int j=0;j<4;j++)
-				{
-					var RootEl = new StackLayout();
-					var Background = new Image();
-
-					Background.Source = "tile.png";
-					Background.WidthRequest = 50;
-
-
-					var label = new Label {
-						Text = Convert.ToString(i),
-						HorizontalOptions = LayoutOptions.Center,
-						VerticalOptions = LayoutOptions.Center,
-						FontSize = 20,
-						TranslationY = -45
-					};
-
-
-
-					RootEl.Children.Add(Background);
-					RootEl.Children.Add(label);
-
-					GameGrid.Children.Add(RootEl, i, j);
-				}
+				GameGrid.Children.Add(CreateTile(tile.Value, tile.GetColor()), GameModelGrid.GetRow(), GameModelGrid.GetColumn())
 			}
+		}
+
+		public StackLayout CreateTile (int value, Color color)
+		{
+			var RootEl = new StackLayout();
+
+			var Background = new BoxView();
+
+			Background.WidthRequest = 50;
+			Background.BackgroundColor = color;
+
+			var label = new Label
+			{
+				Text = Convert.ToString(value),
+				HorizontalOptions = LayoutOptions.Center,
+				VerticalOptions = LayoutOptions.Center,
+				FontSize = 20,
+				TranslationY = -45
+			};
+
+
+
+			RootEl.Children.Add(Background);
+			RootEl.Children.Add(label);
+
+			return RootEl;
 		}
 	}
 }
