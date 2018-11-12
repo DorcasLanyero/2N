@@ -19,9 +19,13 @@ namespace TWON.View.Pages
 
 			var GameModelGrid = new Grid();
 
+			GameModelGrid.PlaceTile();
+
+			int i = 0;  // Yes I know this is convoluted
 			foreach (Tile tile in GameModelGrid.Tiles)
 			{
-				GameGrid.Children.Add(CreateTile(tile.Value, tile.GetColor()), GameModelGrid.GetRow(), GameModelGrid.GetColumn())
+				GameGrid.Children.Add(CreateTile(tile.Value, tile.GetColor()), GameModelGrid.GetRow(i), GameModelGrid.GetColumn(i));
+				i++;
 			}
 		}
 
@@ -32,6 +36,7 @@ namespace TWON.View.Pages
 			var Background = new BoxView();
 
 			Background.WidthRequest = 50;
+			Background.HeightRequest = 50;
 			Background.BackgroundColor = color;
 
 			var label = new Label
@@ -46,7 +51,7 @@ namespace TWON.View.Pages
 
 
 			RootEl.Children.Add(Background);
-			RootEl.Children.Add(label);
+			if (value > 0) RootEl.Children.Add(label);
 
 			return RootEl;
 		}
