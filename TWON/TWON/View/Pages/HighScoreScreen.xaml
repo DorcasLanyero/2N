@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TWON.View.HighScoreScreen">
+    <ContentPage.Content>
+		<ScrollView>
+			<Grid ColumnSpacing="0" RowSpacing="0">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="AUTO" />
+					<RowDefinition Height="AUTO" />
+					<RowDefinition Height="AUTO" />
+				</Grid.RowDefinitions>
+
+				<Grid Grid.Row="1" Margin="0,30" ColumnSpacing="0" RowSpacing="0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+
+					<StackLayout>
+						<Image  HeightRequest = "200"  Source="2N.png" />
+					</StackLayout>
+
+					<StackLayout Grid.Column="2">
+						<Label Text="TopScore"/>
+						<Label Text="score"/>
+					</StackLayout>
+
+				</Grid>
+
+				<Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0" RowSpacing="0">
+					<Image x:Name ="HighScores" HeightRequest="100" HorizontalOptions="Center" Source="2N_Start_Button.gif" TranslationY="50" VerticalOptions="End" WidthRequest="100" />
+				</Grid>
+
+				<Grid Grid.Row="3" Margin="0,30" ColumnSpacing="0" RowSpacing="0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+
+					<StackLayout x:Name="Ranks">
+						<Label Text="Rank"/>
+					</StackLayout>
+
+					<StackLayout x:Name="Names" Grid.Column="1">
+						<Label Text="Name"/>
+					</StackLayout>
+
+					<StackLayout x:Name="Score" Grid.Column="2">
+						<Label Text="Score"/>
+					</StackLayout>
+				</Grid>
+
+			</Grid>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

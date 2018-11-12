@@ -23,7 +23,7 @@ namespace TWON
 
 		private void GameBtn_Clicked(object sender, EventArgs e)
 		{
-			App.Current.MainPage = new GamePage();
+			App.Current.MainPage = new StartPage();
 		}
 	}
 }
