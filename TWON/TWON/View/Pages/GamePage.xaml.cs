@@ -55,5 +55,10 @@ namespace TWON.View.Pages
 
 			return RootEl;
 		}
+
+		private void BackButton_Clicked(object sender, EventArgs e)
+		{
+			App.Current.MainPage = new MainPage();
+		}
 	}
 }
