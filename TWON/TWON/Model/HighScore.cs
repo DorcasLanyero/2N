@@ -25,9 +25,14 @@ namespace TWON
 			HighScore NewHighScore;
 
 			while (High == false || HighScores.Count == 0)
-			{
-				HighScore item = HighScores[Counter];
-				if (item.Score < RecievedScore)
+			{	if(HighScores.Count == 0)
+				{
+					NewHighScore = new HighScore(RecievedName, RecievedScore);
+					HighScores.Add(NewHighScore);
+					High = true;
+				}
+				 
+				else if (HighScores[Counter].Score < RecievedScore)
 				{
 					NewHighScore = new HighScore(RecievedName, RecievedScore);
 					HighScores.Add(NewHighScore);

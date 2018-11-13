@@ -10,9 +10,9 @@ namespace TWON.View.Pages
 	{
 		public StartPage()
 		{
-<<<<<<< HEAD
+
 			InitializeComponent ();
-			StartImage.GestureRecognizers
+			
 		}
 
 		private void About_Clicked(object sender, EventArgs e)
@@ -36,14 +36,14 @@ namespace TWON.View.Pages
 		private void Cheat_Clicked(object sender, EventArgs e)
 		{
 			//Implemet cheat 
-=======
+
 			InitializeComponent();
 		}
 
 		private void OnStartTapped(object sender, EventArgs e)
 		{
 			App.Current.MainPage = new GamePage();
->>>>>>> 39a92d5c696731f56c13977f08e073e630c372d4
+
 		}
 	}
 }
