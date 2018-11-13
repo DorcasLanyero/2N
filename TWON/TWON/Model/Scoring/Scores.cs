@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TWON.Model
+namespace TWON
 {
-	
     class Scores
     {
 		int Score = 0;
