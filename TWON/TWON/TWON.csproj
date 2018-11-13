@@ -18,12 +18,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="View\Pages\AboutScreen.xaml.cs">
+      <DependentUpon>AboutScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\Pages\HelpScreen.xaml.cs">
+      <DependentUpon>HelpScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Update="View\Pages\StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="View\Pages\AboutScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Pages\DifficultyScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Pages\HelpScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\Pages\HighScoreScreen.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

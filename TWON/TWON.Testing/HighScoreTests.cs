@@ -1,4 +1,6 @@
 using NUnit.Framework;
+using System.Collections.Generic;
+using TWON;
 
 namespace TWON.Testing
 {
@@ -10,14 +12,21 @@ namespace TWON.Testing
 		[Test]
 		public void Test_CheckIfHighScore()
 		{
+			HighScore NewScore = new HighScore("Dorcas", 5768);
+			bool result = NewScore.CheckIfHighScore(NewScore.Name, NewScore.Score);
+			
 
 		}
 
 		//Tests the GetFromFIle method
 		[Test]
-		public void Test_GetFromFile()
-		{
-
+		public void Test_Save_Load()
+		{	
+			HighScore NewScore = new HighScore("Dorcas", 456735);
+			NewScore.Save(HighScore.HighScores);
+			List<string> result = NewScore.Load();
+			string results = result[0];
+			
 		}
 
 		//Tests the BestScore method
@@ -27,11 +36,7 @@ namespace TWON.Testing
 			//return "The best score";
 		}
 
-		//Tests the Add to file method.
-		[Test]
-		public void AddToFile()
-		{
-
-		}
+		
+		
 	}
 }

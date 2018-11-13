@@ -15,8 +15,30 @@ namespace TWON.View.Pages
 		public StartPage ()
 		{
 			InitializeComponent ();
+			StartImage.GestureRecognizers
 		}
 
-		//Create event handlers for the different buttons on the start screen. 
+		private void About_Clicked(object sender, EventArgs e)
+		{
+			App.Current.MainPage = new AboutScreen();
+
+		}
+
+		private void Difficulty_Clicked(object sender, EventArgs e)
+		{
+			App.Current.MainPage = new DifficultyScreen();
+
+		}
+
+		private void Help_Clicked(object sender, EventArgs e)
+		{
+			App.Current.MainPage = new HelpScreen();
+
+		}
+
+		private void Cheat_Clicked(object sender, EventArgs e)
+		{
+			//Implemet cheat 
+		}
 	}
 }

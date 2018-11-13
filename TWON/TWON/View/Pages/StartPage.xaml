@@ -21,12 +21,6 @@
 				<!--  start game image  -->
 				<Image x:Name ="StartImage" HeightRequest="100" HorizontalOptions="Center" Source="2N_Start_Button.gif" TranslationY="50" VerticalOptions="End" WidthRequest="100" />
 
-				
-				<StackLayout Grid.Row="1" Padding="0,50,0,00" HorizontalOptions="Center"/>
-
-				<Label   Text="Latest edition" />
-
-
 				<!--  About, difficulty and help buttons  -->
 				<Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0" RowSpacing="0">
 					<Grid.ColumnDefinitions>
@@ -36,22 +30,22 @@
 					</Grid.ColumnDefinitions>
 
 					<StackLayout>
-						<Button Text="About"/>
+						<Button x:Name="About" Text="About" Clicked="About_Clicked"/>
 					</StackLayout>
 
 					<StackLayout Grid.Column="1">
-						<Button Text="Difficulty"/>
+						<Button x:Name="Difficulty" Text="Difficulty" Clicked="Difficulty_Clicked"/>
 					</StackLayout>
 
 					<StackLayout Grid.Column="2">
-						<Button Text="Help"/>
+						<Button x:Name="Help" Text="Help" Clicked="Help_Clicked"/>
 					</StackLayout>
 				</Grid>
 
 				<!--  game gif  -->
 				<Image Grid.Row ="3" HeightRequest = "250"  Source="StartScreen.gif" />
 				<!--  cheat button  -->
-				<Button Grid.Row="4" Margin="20"  Text="Cheat Mode " />
+				<Button x:Name="Cheat" Grid.Row="4" Margin="20"  Text="Cheat Mode " Clicked="Cheat_Clicked"/>
 
 			</Grid>
 		</ScrollView>
