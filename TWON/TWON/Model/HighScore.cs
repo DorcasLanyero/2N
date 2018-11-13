@@ -59,7 +59,7 @@ namespace TWON
 		}
 
 		//Adds a player's name and score to  high score file
-		public void Save()
+		public void Save(List<HighScore> HighScores)
 		{ int count = 1;
 			foreach(HighScore score in HighScores)
 			{

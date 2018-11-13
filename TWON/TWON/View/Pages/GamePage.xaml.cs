@@ -58,7 +58,7 @@ namespace TWON.View.Pages
 
 		private void BackButton_Clicked(object sender, EventArgs e)
 		{
-			App.Current.MainPage = new MainPage();
+			App.Current.MainPage = new StartPage();
 		}
 	}
 }

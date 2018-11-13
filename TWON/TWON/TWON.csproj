@@ -10,11 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <Compile Remove="View\Model\**" />
+    <EmbeddedResource Remove="View\Model\**" />
+    <None Remove="View\Model\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="View\Model\" />
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
   </ItemGroup>
 
   <ItemGroup>

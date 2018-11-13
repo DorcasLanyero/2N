@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,8 +8,9 @@ namespace TWON.View.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class StartPage : ContentPage
 	{
-		public StartPage ()
+		public StartPage()
 		{
+<<<<<<< HEAD
 			InitializeComponent ();
 			StartImage.GestureRecognizers
 		}
@@ -39,6 +36,14 @@ namespace TWON.View.Pages
 		private void Cheat_Clicked(object sender, EventArgs e)
 		{
 			//Implemet cheat 
+=======
+			InitializeComponent();
+		}
+
+		private void OnStartTapped(object sender, EventArgs e)
+		{
+			App.Current.MainPage = new GamePage();
+>>>>>>> 39a92d5c696731f56c13977f08e073e630c372d4
 		}
 	}
 }
