@@ -15,17 +15,18 @@
 				</Grid.RowDefinitions>
 
 				<!--  header background  -->
-
 				<Image  HeightRequest = "200" Aspect="Fill" Margin="0,-1,0,-1" Source="2N.png" VerticalOptions="End" />
 
 				<!--  start game image  -->
-				<Image x:Name ="StartImage" HeightRequest="100" HorizontalOptions="Center" Source="2N_Start_Button.gif" TranslationY="50" VerticalOptions="End" WidthRequest="100" />
+				<Image x:Name ="StartImage" HeightRequest="100" HorizontalOptions="Center" Source="2N_Start_Button.gif" TranslationY="50" VerticalOptions="End" WidthRequest="100">
+					<Image.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnStartTapped" NumberOfTapsRequired="1" />
+					</Image.GestureRecognizers>
+				</Image>
 
-				
 				<StackLayout Grid.Row="1" Padding="0,50,0,00" HorizontalOptions="Center"/>
 
 				<Label   Text="Latest edition" />
-
 
 				<!--  About, difficulty and help buttons  -->
 				<Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0" RowSpacing="0">
