@@ -19,3 +19,9 @@ To play, use the arrow keys to move the tiles around the board.  When a key is p
 ## Known Issues
 
 Game isn't currently playable, and model is partially implemented.
+
+## Demo
+
+https://files.slack.com/files-pri/T8JB2BS79-FE3C16PP0/download/2018-11-12_20-16-44.flv
+
+## Expenses
