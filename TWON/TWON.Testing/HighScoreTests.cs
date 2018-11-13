@@ -14,7 +14,7 @@ namespace TWON.Testing
 		{
 			HighScore NewScore = new HighScore("Dorcas", 5768);
 			bool result = NewScore.CheckIfHighScore(NewScore.Name, NewScore.Score);
-			
+			Assert.IsTrue(result == true);
 
 		}
 
@@ -26,7 +26,7 @@ namespace TWON.Testing
 			NewScore.Save(HighScore.HighScores);
 			List<string> result = NewScore.Load();
 			string results = result[0];
-			
+			Assert.IsTrue(results == "1 Dorcas 456735");
 		}
 
 		//Tests the BestScore method
