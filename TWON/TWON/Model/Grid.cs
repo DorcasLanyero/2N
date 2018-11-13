@@ -11,45 +11,16 @@ namespace TWON
 	public class Grid
 	{
 		public Tile[] Tiles { get; set; }
+
+		protected static CryptoRandom rand = new CryptoRandom();
+
 		private readonly int _columns;
 		private readonly int _gridSize;
 
-		protected static CryptoRandom rand = new CryptoRandom();
-		public List<List<Direction>> directions = new List<List<Direction>>()
+		public Grid(int size)
 		{
-			/*
-			 * Attempt checking clockwise
-			 * 
-			 * [00, 01, 02, 03]
-			 * [04, 05, 06, 07]
-			 * [08, 09, 10, 11]
-			 * [12, 13, 14, 15]
-			 */
-			new List<Direction>() { Right, Down },
-			new List<Direction>() { Right, Down, Left },
-			new List<Direction>() { Right, Down, Left },
-			new List<Direction>() { Down, Left },
-
-			new List<Direction>() { Up, Right, Down },
-			new List<Direction>() { Up, Right, Down, Left },
-			new List<Direction>() { Up, Right, Down, Left },
-			new List<Direction>() { Up, Down, Left },
-
-			new List<Direction>() { Up, Right, Down },
-			new List<Direction>() { Up, Right, Down, Left },
-			new List<Direction>() { Up, Right, Down, Left },
-			new List<Direction>() { Up, Down, Left },
-
-			new List<Direction>() { Up, Right },
-			new List<Direction>() { Up, Right, Left },
-			new List<Direction>() { Up, Right, Left },
-			new List<Direction>() { Up, Left },
-		};
-
-		public Grid(int max)
-		{
-			_columns = max;
-			_gridSize = max * max;
+			_columns = size;
+			_gridSize = size * size;
 			Tiles = new Tile[_gridSize];
 
 			for (int i = 0; i < _gridSize; ++i)
@@ -70,6 +41,50 @@ namespace TWON
 		public int GetColumn(int idx)
 		{
 			return idx % _columns;
+		}
+
+		// use memoization so we don't have to iterate every time we call GetDirections()
+		private readonly List<HashSet<Direction>> Dir_Memos = new List<HashSet<Direction>>();
+
+		public List<HashSet<Direction>> GetDirections()
+		{
+			if (Dir_Memos.Count == 0)
+			{
+				for (int i = 0, row, col; i < _gridSize; ++i)
+				{
+					row = GetRow(i);
+					col = GetColumn(i);
+					var set = new HashSet<Direction>();
+
+					if (row == 0)
+					{
+						set.Add(Down);
+					}
+					else if (row == _columns - 1)
+					{
+						set.Add(Up);
+					}
+					else
+					{
+						set.Add(Up);
+						set.Add(Down);
+					}
+
+					if (col > 0)
+					{
+						set.Add(Left);
+					}
+
+					if (col < _columns - 1)
+					{
+						set.Add(Right);
+					}
+
+					Dir_Memos.Add(set);
+				}
+			}
+
+			return Dir_Memos;
 		}
 
 		// randomly place one 2 on an empty tile
