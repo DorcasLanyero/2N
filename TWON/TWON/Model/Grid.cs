@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using static TWON.Direction;
 
 namespace TWON
@@ -11,6 +12,7 @@ namespace TWON
 	public class Grid
 	{
 		public Tile[] Tiles { get; set; }
+		public bool GameOver => Tiles.All(tile => tile.Value > 0);
 
 		protected static CryptoRandom rand = new CryptoRandom();
 
@@ -88,11 +90,11 @@ namespace TWON
 		}
 
 		// randomly place one 2 on an empty tile
-		public void PlaceTile()
+		public bool PlaceTile()
 		{
 			bool searching = true;
 
-			while (searching)
+			while (searching && !GameOver)
 			{
 				Tile tile = Tiles[rand.Next(_gridSize)];
 
@@ -102,6 +104,8 @@ namespace TWON
 					searching = false;
 				}
 			}
+
+			return GameOver;
 		}
 
 		// shift all tile values on the grid in the given direction
