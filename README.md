@@ -46,3 +46,18 @@ Total: 6:13
 Time Remaining: 49:47
 
 https://github.com/125HornetWay/2N/wiki/Matthew's-Journal
+
+## Dorcas Lanyero
+
+| Date | Task | Time Spent|
+|------|------|-----------|
+| 11/9 | HighScores | 1:40 |
+| 11/10 | StartScreen | 3:11 |
+| 11/10 | HighScoreScreen | 1:20 |
+| 11/11 | Tests | 0:30 |
+| 11/12 | Misc. | 1:40 |
+
+Total: 6:21
+Time Remaining: 51:39
+
+https://github.com/125HornetWay/2N/wiki/Dorcas'-Journal
