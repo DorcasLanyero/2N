@@ -14,6 +14,7 @@ To play, use the arrow keys to move the tiles around the board.  When a key is p
 * High score screen
 * Scores
 * Tests
+* Base Model
 
 ## Known Issues
 
