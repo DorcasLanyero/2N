@@ -92,16 +92,14 @@ namespace TWON
 		// randomly place one 2 on an empty tile
 		public bool PlaceTile()
 		{
-			bool searching = true;
-
-			while (searching && !GameOver)
+			while (!GameOver)
 			{
 				Tile tile = Tiles[rand.Next(_gridSize)];
 
 				if (tile.Value == 0)
 				{
 					tile.Value = 2;
-					searching = false;
+					break;
 				}
 			}
 
@@ -111,7 +109,23 @@ namespace TWON
 		// shift all tile values on the grid in the given direction
 		public void ShiftTiles(Direction dir)
 		{
+			for (int i = 0, row, col; i < _gridSize; ++i)
+			{
+				row = GetRow(i);
+				col = GetColumn(i);
 
+				// going up = subtracting _columns
+				// going down = adding _columns
+				// going left = subtracting one
+				// going right = adding one
+
+				if (GetDirections()[i].Contains(dir))
+				{
+
+				}
+			}
+
+			PlaceTile();
 		}
 
 		public string Save()
