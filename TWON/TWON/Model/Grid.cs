@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using TWON.Model;
 using static TWON.Direction;
 
 namespace TWON
@@ -13,6 +14,8 @@ namespace TWON
 	{
 		public Tile[] Tiles { get; set; }
 		public bool GameOver => Tiles.All(tile => tile.Value > 0);
+
+		public bool cheatMode = false;
 
 		protected static CryptoRandom rand = new CryptoRandom();
 
@@ -33,6 +36,11 @@ namespace TWON
 
 		public Grid() : this(4) { }
 
+		public Grid(int size, bool cheatMode) : this(size)
+		{
+			this.cheatMode = cheatMode;
+		}
+
 		// row # of item at idx
 		public int GetRow(int idx)
 		{
@@ -44,6 +52,25 @@ namespace TWON
 		{
 			return idx % _columns;
 		}
+
+		public Move MoveTile(int i, Direction d)
+		{
+			switch (d)
+			{
+				case Direction.Down:
+					if (Tiles[i -_gridSize].Value == 0)
+					{
+						var move = new Move(i, Tiles[i], new int[] { GetRow(i), GetColumn(i) }, new int[] { GetRow(i - _gridSize), GetColumn(i - _gridSize) });
+					}
+
+					break;
+				default:
+					break;
+			}
+
+			return null;
+		}
+		
 
 		// use memoization so we don't have to iterate every time we call GetDirections()
 		private readonly List<HashSet<Direction>> Dir_Memos = new List<HashSet<Direction>>();
