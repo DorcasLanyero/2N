@@ -55,20 +55,68 @@ namespace TWON
 
 		public Move MoveTile(int i, Direction d)
 		{
-			switch (d)
+			int[] initialPosition = { GetRow(i), GetColumn(i) };
+			int[] finalPosition = initialPosition;
+			bool pieceShifted = true;
+			while (pieceShifted)
 			{
-				case Direction.Down:
-					if (Tiles[i -_gridSize].Value == 0)
-					{
-						var move = new Move(i, Tiles[i], new int[] { GetRow(i), GetColumn(i) }, new int[] { GetRow(i - _gridSize), GetColumn(i - _gridSize) });
-					}
-
-					break;
-				default:
-					break;
+				switch (d)
+				{
+					case Direction.Down:
+						if (Tiles[i + _gridSize].Value == 0)
+						{
+							finalPosition = new int[] { GetRow(i + _gridSize), GetColumn(i + _gridSize) };
+						} else
+						{
+							pieceShifted = false;
+						}
+						break;
+					case Direction.Up:
+						if (Tiles[i - _gridSize].Value == 0)
+						{
+							finalPosition = new int[] { GetRow(i - _gridSize), GetColumn(i - _gridSize) };
+						}
+						else
+						{
+							pieceShifted = false;
+						}
+						break;
+					case Direction.Left:
+						if (Tiles[i - 1].Value == 0)
+						{
+							finalPosition = new int[] { GetRow(i - 1), GetColumn(i - 1) };
+						}
+						else
+						{
+							pieceShifted = false;
+						}
+						break;
+					case Direction.Right:
+						if (Tiles[i + 1].Value == 0)
+						{
+							finalPosition = new int[] { GetRow(i + 1), GetColumn(i + 1) };
+						}
+						else
+						{
+							pieceShifted = false;
+						}
+						break;
+					default:
+						throw new System.Exception("Invalid direction");
+				}
 			}
 
-			return null;
+			if (finalPosition != initialPosition)
+			{
+				return new Move(
+					i,
+					Tiles[i],
+					initialPosition,
+					finalPosition);
+			} else
+			{
+				return null;
+			}
 		}
 		
 
