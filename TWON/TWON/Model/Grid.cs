@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TWON.Model;
@@ -12,9 +13,9 @@ namespace TWON
 
 	public class Grid
 	{
+		public event EventHandler<List<Move>> UpdateBoardEvent;
 		public Tile[] Tiles { get; set; }
 		public bool GameOver => Tiles.All(tile => tile.Value > 0);
-
 		public bool cheatMode = false;
 
 		protected static CryptoRandom rand = new CryptoRandom();
@@ -55,64 +56,61 @@ namespace TWON
 
 		public Move MoveTile(int i, Direction d)
 		{
-			int[] initialPosition = { GetRow(i), GetColumn(i) };
-			int[] finalPosition = initialPosition;
+			int finalIndex = i;
+			bool combination = false;
 			bool pieceShifted = true;
 			while (pieceShifted)
 			{
+
+				// going up = subtracting _columns
+				// going down = adding _columns
+				// going left = subtracting one
+				// going right = adding one
+				int testIndex;
 				switch (d)
 				{
 					case Direction.Down:
-						if (Tiles[i + _gridSize].Value == 0)
-						{
-							finalPosition = new int[] { GetRow(i + _gridSize), GetColumn(i + _gridSize) };
-						} else
-						{
-							pieceShifted = false;
-						}
+						testIndex = i + _columns;
 						break;
 					case Direction.Up:
-						if (Tiles[i - _gridSize].Value == 0)
-						{
-							finalPosition = new int[] { GetRow(i - _gridSize), GetColumn(i - _gridSize) };
-						}
-						else
-						{
-							pieceShifted = false;
-						}
+						testIndex = i - _columns;
 						break;
 					case Direction.Left:
-						if (Tiles[i - 1].Value == 0)
-						{
-							finalPosition = new int[] { GetRow(i - 1), GetColumn(i - 1) };
-						}
-						else
-						{
-							pieceShifted = false;
-						}
+						testIndex = i - 1;
 						break;
 					case Direction.Right:
-						if (Tiles[i + 1].Value == 0)
-						{
-							finalPosition = new int[] { GetRow(i + 1), GetColumn(i + 1) };
-						}
-						else
-						{
-							pieceShifted = false;
-						}
+						testIndex = i + 1;
 						break;
 					default:
 						throw new System.Exception("Invalid direction");
 				}
+
+				if (Tiles[testIndex].Value == 0)
+				{
+					// If a position is empty
+					finalIndex = testIndex;
+				}
+				else if (Tiles[testIndex].Value == Tiles[i].Value)
+				{
+					// If the tile can be combined
+					combination = true;
+				}
+				else
+				{
+					pieceShifted = false;
+				}
 			}
 
-			if (finalPosition != initialPosition)
+			if (finalIndex != i)
 			{
-				return new Move(
-					i,
-					Tiles[i],
-					initialPosition,
-					finalPosition);
+				if (combination)
+				{
+					return new Combination(i, finalIndex, Tiles[i]);
+				} else
+				{
+					return new Shift(i, finalIndex, Tiles[i]);
+				}
+				
 			} else
 			{
 				return null;
@@ -165,42 +163,54 @@ namespace TWON
 		}
 
 		// randomly place one 2 on an empty tile
-		public bool PlaceTile()
+		public int PlaceTile()
 		{
 			while (!GameOver)
 			{
-				Tile tile = Tiles[rand.Next(_gridSize)];
+				int i = rand.Next(_gridSize);
+				Tile tile = Tiles[i];
 
 				if (tile.Value == 0)
 				{
 					tile.Value = 2;
-					break;
+					return i;
 				}
 			}
 
-			return GameOver;
+			return -1;
 		}
 
 		// shift all tile values on the grid in the given direction
-		public void ShiftTiles(Direction dir)
+		public List<Move> ShiftTiles(Direction dir)
 		{
+			List<Move> moves = new List<Move>();
+			if (dir == Direction.Down || dir == Direction.Right)
+			{
+				// Count i down
+			} else
+			{
+				// Count i up
+			}
+
+			// Move into if statement
 			for (int i = 0, row, col; i < _gridSize; ++i)
 			{
 				row = GetRow(i);
 				col = GetColumn(i);
 
-				// going up = subtracting _columns
-				// going down = adding _columns
-				// going left = subtracting one
-				// going right = adding one
+				
 
 				if (GetDirections()[i].Contains(dir))
 				{
-
+					moves.Add(MoveTile(i, dir));
 				}
 			}
 
-			PlaceTile();
+			int newTile = PlaceTile();
+			moves.Add(new Spawn(newTile, Tiles[newTile]));
+			
+
+			return moves;
 		}
 
 		public string Save()
