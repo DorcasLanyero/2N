@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,7 +31,15 @@ namespace TWON.View.Pages
 				i++;
 			}
 
-			
+			Device.StartTimer(TimeSpan.FromSeconds(1), Model.UpdateTimer);
+
+			Model.UpdateTimeEvent += TimeUpdate;
+
+		}
+
+		void TimeUpdate(object sender, object value)
+		{
+			TimeLabel.Text = Model.Time.ToString("g");
 		}
 
 		public StackLayout CreateTile (int value, Color color)

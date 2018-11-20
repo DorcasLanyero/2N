@@ -13,15 +13,33 @@ namespace TWON
 
 	public class Grid
 	{
-		public event EventHandler<List<Move>> UpdateBoardEvent;
+		public EventHandler<object> UpdateTimeEvent;
 		public Tile[] Tiles { get; set; }
 		public bool GameOver => Tiles.All(tile => tile.Value > 0);
 		public bool cheatMode = false;
+
+		public TimeSpan Time = TimeSpan.Zero;
 
 		protected static CryptoRandom rand = new CryptoRandom();
 
 		private readonly int _columns;
 		private readonly int _gridSize;
+
+		public bool UpdateTimer()
+		{
+			if (!GameOver)
+			{
+				Time = Time.Add(TimeSpan.FromSeconds(1));
+				if (UpdateTimeEvent != null)
+					UpdateTimeEvent(this, null);
+				return true;
+			} else
+			{
+				return false;
+			}
+				
+
+		}
 
 		public Grid(int size)
 		{
@@ -33,6 +51,7 @@ namespace TWON
 			{
 				Tiles[i] = new Tile();
 			}
+
 		}
 
 		public Grid() : this(4) { }
@@ -236,5 +255,7 @@ namespace TWON
 		{
 			return data.XmlDeserializeFromString<Grid>();
 		}
+
+
 	}
 }
