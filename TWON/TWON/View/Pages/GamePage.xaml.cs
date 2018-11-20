@@ -42,6 +42,7 @@ namespace TWON.View.Pages
 			TimeLabel.Text = Model.Time.ToString("g");
 		}
 
+
 		public StackLayout CreateTile (int value, Color color)
 		{
 			var RootEl = new StackLayout();

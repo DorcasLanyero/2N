@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using TWON.Model;
 using static TWON.Direction;
@@ -41,6 +42,36 @@ namespace TWON
 
 		}
 
+		public string Serialize() {
+			string s = _columns + ";";
+			s += Time.ToString() + ";";
+			for (int i = 0; i < Tiles.Length; i++)
+			{
+				s += Tiles[i].Serialize();
+				if (i < Tiles.Length - 1)
+					s += ",";
+			}
+
+			return s;
+		}
+
+		public static Grid Deserialize(string s)
+		{
+			string[] split = s.Split(';');
+			Grid grid = new Grid(Convert.ToInt32(split[0]));
+
+			grid.Time = TimeSpan.Parse(split[1]);
+
+			string[] tiles = split[2].Split(',');
+
+			for (int i = 0; i < tiles.Length; i++)
+			{
+				grid.Tiles[i] = Tile.Deserialize(tiles[i]);
+			}
+
+			return grid;
+		}
+
 		public Grid(int size)
 		{
 			_columns = size;
@@ -52,6 +83,7 @@ namespace TWON
 				Tiles[i] = new Tile();
 			}
 
+			Debug.WriteLine(this.Serialize());
 		}
 
 		public Grid() : this(4) { }
