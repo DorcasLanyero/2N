@@ -1,3 +1,4 @@
+using System;
 using Xamarin.Forms;
 
 namespace TWON
@@ -5,6 +6,18 @@ namespace TWON
 	public class Tile
 	{
 		public int Value { get; set; }
+
+		public string Serialize()
+		{
+			return Convert.ToString(Value);
+		}
+
+		public static Tile Deserialize(string val)
+		{
+			var tile = new Tile();
+			tile.Value = Convert.ToInt32(val);
+			return tile;
+		}
 		
 		public Color GetColor()
 		{

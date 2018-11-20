@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using TWON.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,21 +14,34 @@ namespace TWON.View.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class GamePage : ContentPage
 	{
+		Grid Model;
 		public GamePage()
 		{
 			InitializeComponent();
 
-			var GameModelGrid = new Grid();
+			Model = new Grid();
 
-			GameModelGrid.PlaceTile();
+			Model.PlaceTile();
 
 			int i = 0;  // Yes I know this is convoluted
-			foreach (Tile tile in GameModelGrid.Tiles)
+			foreach (Tile tile in Model.Tiles)
 			{
-				GameGrid.Children.Add(CreateTile(tile.Value, tile.GetColor()), GameModelGrid.GetRow(i), GameModelGrid.GetColumn(i));
+				StackLayout TileElement = CreateTile(tile.Value, tile.GetColor());
+				GameGrid.Children.Add(TileElement, Model.GetRow(i), Model.GetColumn(i));
 				i++;
 			}
+
+			Device.StartTimer(TimeSpan.FromSeconds(1), Model.UpdateTimer);
+
+			Model.UpdateTimeEvent += TimeUpdate;
+
 		}
+
+		void TimeUpdate(object sender, object value)
+		{
+			TimeLabel.Text = Model.Time.ToString("g");
+		}
+
 
 		public StackLayout CreateTile (int value, Color color)
 		{
@@ -51,7 +65,7 @@ namespace TWON.View.Pages
 
 
 			RootEl.Children.Add(Background);
-			if (value > 0) RootEl.Children.Add(label);
+			RootEl.Children.Add(label);
 
 			return RootEl;
 		}
@@ -59,6 +73,63 @@ namespace TWON.View.Pages
 		private void BackButton_Clicked(object sender, EventArgs e)
 		{
 			App.Current.MainPage = new StartPage();
+		}
+
+		private void MoveTiles(List<Move> moves)
+		{
+			foreach (Move move in moves)
+			{
+
+				if (move.GetType() == typeof(Shift))
+				{
+					Shift sMove = move as Shift;
+
+					int cX = Model.GetColumn(sMove.i);
+					int cY = Model.GetRow(sMove.i);
+
+					int nX = Model.GetColumn(sMove.newIndex);
+					int nY = Model.GetRow(sMove.newIndex);
+					int nI = Model.GetIndex(nX, nY);
+
+					Xamarin.Forms.Grid.SetColumn(GameGrid.Children[sMove.i], nX);
+					Xamarin.Forms.Grid.SetRow(GameGrid.Children[sMove.i], nY);
+
+					StackLayout el = (StackLayout)GameGrid.Children[nI];
+					Label lbl = (Label)el.Children[1];
+					lbl.Text = Convert.ToString(sMove.tile.Value);
+				}
+				else if (move.GetType() == typeof(Spawn))
+				{
+
+					StackLayout el = (StackLayout)GameGrid.Children[move.i];
+					Label lbl = (Label)el.Children[1];
+					lbl.Text = Convert.ToString(move.tile.Value);
+				} else
+				{
+					throw new NotImplementedException();
+				}
+				
+			}
+		}
+
+		private void MoveDown(object sender, EventArgs e)
+		{
+			MoveTiles(Model.ShiftTiles(Direction.Down));
+		}
+
+		private void MoveUp(object sender, EventArgs e)
+		{
+			MoveTiles(Model.ShiftTiles(Direction.Up));
+		}
+
+		private void MoveLeft(object sender, EventArgs e)
+		{
+			MoveTiles(Model.ShiftTiles(Direction.Left));
+		}
+
+		private void MoveRight(object sender, EventArgs e)
+		{
+			MoveTiles(Model.ShiftTiles(Direction.Right));
 		}
 	}
 }
