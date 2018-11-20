@@ -2,11 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TWON.View.AboutScreen">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout HorizontalOptions="Center" >
+				<StackLayout VerticalOptions="Center">
+					<Label x:Name="Developers" Text="Developers"/>
+				<StackLayout HeightRequest="100">
+					<Label  x:Name ="Matthew" Text="Matthew Miller"/>
+					<Label x:Name="Matthew_Description" Text="Game Model Design, View Manupulation and Game timing "/>
+				</StackLayout>
+				<StackLayout HeightRequest="100">
+					<Label  x:Name ="Dorcas" Text="Docas Lanyero"/>
+					<Label x:Name="Dorcas_Description" Text="Game screens and tile animations"/>
+				</StackLayout>
+			</StackLayout>
+				<StackLayout VerticalOptions="Center">
+					<StackLayout HeightRequest="100">
+						<Label  x:Name ="Releasedates" Text="Release Dates"/>
+						<Label Text="The Game will be released on the 30 of November 2018"/>
+					</StackLayout>
+				</StackLayout>
+				</StackLayout>
+
+		</ScrollView>
+	</ContentPage.Content>
 </ContentPage>
