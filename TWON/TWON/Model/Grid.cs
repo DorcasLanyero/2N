@@ -54,11 +54,17 @@ namespace TWON
 			return idx % _columns;
 		}
 
+		public int GetIndex(int x, int y)
+		{
+			return (x + y) * _columns;
+		}
+
 		public Move MoveTile(int i, Direction d)
 		{
 			int finalIndex = i;
 			bool combination = false;
 			bool pieceShifted = true;
+			Tile tile = Tiles[i];
 			while (pieceShifted)
 			{
 
@@ -70,44 +76,57 @@ namespace TWON
 				switch (d)
 				{
 					case Direction.Down:
-						testIndex = i + _columns;
+						testIndex = finalIndex + _columns;
 						break;
 					case Direction.Up:
-						testIndex = i - _columns;
+						testIndex = finalIndex - _columns;
 						break;
 					case Direction.Left:
-						testIndex = i - 1;
+						testIndex = finalIndex - 1;
 						break;
 					case Direction.Right:
-						testIndex = i + 1;
+						testIndex = finalIndex + 1;
 						break;
 					default:
 						throw new System.Exception("Invalid direction");
 				}
 
-				if (Tiles[testIndex].Value == 0)
+				try
 				{
-					// If a position is empty
-					finalIndex = testIndex;
-				}
-				else if (Tiles[testIndex].Value == Tiles[i].Value)
-				{
-					// If the tile can be combined
-					combination = true;
-				}
-				else
+					if (Tiles[testIndex].Value == 0)
+					{
+						// If a position is empty
+						finalIndex = testIndex;
+					}
+					else if (Tiles[testIndex].Value == Tiles[i].Value)
+					{
+						// If the tile can be combined
+						combination = true;
+					}
+					else
+					{
+						pieceShifted = false;
+					}
+				} catch
 				{
 					pieceShifted = false;
 				}
+				
+
+				//c++;
 			}
 
 			if (finalIndex != i)
 			{
 				if (combination)
 				{
+					Tiles[finalIndex].Value = Tiles[i].Value + Tiles[finalIndex].Value;
+					Tiles[i].Value = 0;
 					return new Combination(i, finalIndex, Tiles[i]);
 				} else
 				{
+					Tiles[finalIndex].Value = Tiles[i].Value;
+					Tiles[i].Value = 0;
 					return new Shift(i, finalIndex, Tiles[i]);
 				}
 				
@@ -193,14 +212,9 @@ namespace TWON
 			}
 
 			// Move into if statement
-			for (int i = 0, row, col; i < _gridSize; ++i)
+			for (int i = 0; i < _gridSize; ++i)
 			{
-				row = GetRow(i);
-				col = GetColumn(i);
-
-				
-
-				if (GetDirections()[i].Contains(dir))
+				if (GetDirections()[i].Contains(dir) && Tiles[i].Value > 0)
 				{
 					moves.Add(MoveTile(i, dir));
 				}

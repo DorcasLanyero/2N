@@ -22,6 +22,15 @@
 				</Grid.ColumnDefinitions>
 
 			</Grid>
+
+			<StackLayout HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="540, 300, 200, 200">
+				<Button Text="▲" Clicked="MoveUp" />
+				<StackLayout Orientation="Horizontal">
+					<Button Text="◀" Clicked="MoveLeft" />
+					<Button Text="▶" Clicked="MoveRight" />
+				</StackLayout>
+				<Button Text="▼" Clicked="MoveDown" />
+			</StackLayout>
 		</AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

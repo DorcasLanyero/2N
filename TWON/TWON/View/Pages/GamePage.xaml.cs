@@ -18,14 +18,15 @@ namespace TWON.View.Pages
 		{
 			InitializeComponent();
 
-			var Model = new Grid();
+			Model = new Grid();
 
 			Model.PlaceTile();
 
 			int i = 0;  // Yes I know this is convoluted
 			foreach (Tile tile in Model.Tiles)
 			{
-				GameGrid.Children.Add(CreateTile(tile.Value, tile.GetColor()), Model.GetRow(i), Model.GetColumn(i));
+				StackLayout TileElement = CreateTile(tile.Value, tile.GetColor());
+				GameGrid.Children.Add(TileElement, Model.GetRow(i), Model.GetColumn(i));
 				i++;
 			}
 
@@ -54,7 +55,7 @@ namespace TWON.View.Pages
 
 
 			RootEl.Children.Add(Background);
-			if (value > 0) RootEl.Children.Add(label);
+			RootEl.Children.Add(label);
 
 			return RootEl;
 		}
@@ -68,31 +69,57 @@ namespace TWON.View.Pages
 		{
 			foreach (Move move in moves)
 			{
-				int x = Model.GetColumn(move.i);
-				int y = Model.GetRow(move.i);
 
+				if (move.GetType() == typeof(Shift))
+				{
+					Shift sMove = move as Shift;
 
+					int cX = Model.GetColumn(sMove.i);
+					int cY = Model.GetRow(sMove.i);
+
+					int nX = Model.GetColumn(sMove.newIndex);
+					int nY = Model.GetRow(sMove.newIndex);
+					int nI = Model.GetIndex(nX, nY);
+
+					Xamarin.Forms.Grid.SetColumn(GameGrid.Children[sMove.i], nX);
+					Xamarin.Forms.Grid.SetRow(GameGrid.Children[sMove.i], nY);
+
+					StackLayout el = (StackLayout)GameGrid.Children[nI];
+					Label lbl = (Label)el.Children[1];
+					lbl.Text = Convert.ToString(sMove.tile.Value);
+				}
+				else if (move.GetType() == typeof(Spawn))
+				{
+
+					StackLayout el = (StackLayout)GameGrid.Children[move.i];
+					Label lbl = (Label)el.Children[1];
+					lbl.Text = Convert.ToString(move.tile.Value);
+				} else
+				{
+					throw new NotImplementedException();
+				}
+				
 			}
 		}
 
 		private void MoveDown(object sender, EventArgs e)
 		{
-
+			MoveTiles(Model.ShiftTiles(Direction.Down));
 		}
 
 		private void MoveUp(object sender, EventArgs e)
 		{
-
+			MoveTiles(Model.ShiftTiles(Direction.Up));
 		}
 
 		private void MoveLeft(object sender, EventArgs e)
 		{
-
+			MoveTiles(Model.ShiftTiles(Direction.Left));
 		}
 
 		private void MoveRight(object sender, EventArgs e)
 		{
-
+			MoveTiles(Model.ShiftTiles(Direction.Right));
 		}
 	}
 }
