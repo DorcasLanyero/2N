@@ -17,15 +17,15 @@
 		</Grid.ColumnDefinitions>
 
 		<StackLayout>
-			<Button x:Name="Level1" Text="About" Clicked="About_Clicked"/>
+			<Button x:Name="Level1" Text="About" Clicked="Level1_Clicked"/>
 		</StackLayout>
 
 		<StackLayout Grid.Column="1">
-			<Button x:Name="Level2" Text="Difficulty" Clicked="Difficulty_Clicked"/>
+			<Button x:Name="Level2" Text="Difficulty" Clicked="Level2_Clicked"/>
 		</StackLayout>
 
 		<StackLayout Grid.Column="2">
-			<Button x:Name="Level3" Text="" Clicked="Help_Clicked"/>
+			<Button x:Name="Level3" Text="" Clicked="Level3_Clicked"/>
 		</StackLayout>
 	</Grid>
 </Grid>

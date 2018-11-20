@@ -5,7 +5,7 @@ using System.IO;
 
 namespace TWON.Model
 {
-    class HightScoreCollection
+    public class HightScoreCollection
     {
 		public static List<HighScore> HighScores = new List<HighScore>();
 		public HightScoreCollection()
