@@ -61,3 +61,55 @@ Total: 6:21
 Time Remaining: 51:39
 
 https://github.com/125HornetWay/2N/wiki/Dorcas'-Journal
+
+
+
+## Instructions
+
+[Not working in Beta]
+
+The model implementation is not fully functioning as required. Only one safe shift of tiles can be made before every thing else crushes. The cheat button also goes back to the start page because the cheat mode has not been implemented yet. The save / load logic has also been partially implemented but is not fully functional yet.
+
+## Work completed
+
+* About screen
+* Help screen
+* High score implementation
+* game timing
+* model implementaion
+* save/load (partialy implemented)
+
+## Known Issues
+
+Game is playable but break beyond on move.
+
+
+## Demo
+
+https://youtu.be/I7BdzzuZQoQ
+
+## Expenses
+
+### Matthew Miller
+| Date | Task | Time Spent|
+|------|------|-----------|
+| **Beta** | | **23:36** |
+
+
+Total: 6:13
+Time Remaining: 26:11
+
+https://github.com/125HornetWay/2N/wiki/Matthew's-Journal
+
+## Dorcas Lanyero
+
+| Date | Task | Time Spent|
+|------|------|-----------|
+| **Beta** | | **7:12** |
+
+
+
+Total: 6:21
+Time Remaining: 44:57
+
+https://github.com/125HornetWay/2N/wiki/Dorcas'-Journal
