@@ -31,5 +31,13 @@ namespace TWON.View.Pages
 		{
 			App.Current.MainPage = new GamePage();
 		}
+
+		
+
+		private void Back_Clicked(object sender, EventArgs e)
+		{
+			App.Current.MainPage = new StartPage();
+		}
 	}
-}
+	}
+
