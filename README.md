@@ -61,3 +61,54 @@ Total: 6:21
 Time Remaining: 51:39
 
 https://github.com/125HornetWay/2N/wiki/Dorcas'-Journal
+
+# 2N
+Customized 2048 clone
+
+## Instructions
+
+[Not working in Beta]
+
+Model logic is not fully functinal. The program breaks after one move.  
+
+## Work completed
+
+* ABout Screen
+* Help screen
+* Difficulty screen
+* Scores
+* Game timing
+* Game Model
+
+## Known Issues
+
+Game is playable but breaks after one move. 
+
+## Demo
+
+https://youtu.be/I7BdzzuZQoQ
+
+## Expenses
+
+### Matthew Miller
+| Date | Task | Time Spent|
+|------|------|-----------|
+| **Beta** | | **23:36** |
+
+
+Total: 29.49
+Time Remaining: 26.11:47
+
+https://github.com/125HornetWay/2N/wiki/Matthew's-Journal
+
+## Dorcas Lanyero
+
+| Date | Task | Time Spent|
+|------|------|-----------|
+| **Beta** | | **12:28** |
+
+
+Total: 18.49
+Time Remaining: 39:11
+
+https://github.com/125HornetWay/2N/wiki/Dorcas'-Journal
